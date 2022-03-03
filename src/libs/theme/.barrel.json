@@ -1,0 +1,9 @@
+{
+  "directory": ["src"],
+  "delete": true,
+  "location": "replace",
+  "structure": "flat",
+  "verbose": false,
+  "include": [".tsx?$"],
+  "exclude": ["(constants|errors|spec).tsx?$", "(common|utils)/index.ts$"]
+}

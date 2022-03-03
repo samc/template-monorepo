@@ -1,0 +1,26 @@
+{
+	"Generate a State Machine context updater function": {
+		"scope": "typescript",
+		"prefix": ["machine updater", "m updater", "m u", "mu"],
+		"body": [
+			"// ---[${1/(.*)/${1:/capitalize}/}]-----------------------------------------------------------------",
+			"",
+			"/**",
+			" * Event signature for the {@link ${1:name} `${1:name}`} updater.",
+			" */",
+			"type ${1/(.*)/${1:/capitalize}/}Event = Immer.ImmerUpdateEvent<Type.${1/(.*)/${1:/upcase}/}, Global.Context[\"${1:name}\"]>;",
+			"",
+			"/**",
+			" * Updater for the {@link Global.Context.${1:name} `${1:name}`} context",
+			" * property.",
+			" */",
+			"export const ${1:name} = Immer.createUpdater<Global.Context, ${1/(.*)/${1:/capitalize}/}Event>(",
+			"\tType.${1/(.*)/${1:/upcase}/},",
+			"\t(ctx, { input }) => {",
+			"\t\tctx.${1:name} = input;",
+			"\t},",
+			");"
+		],
+		"description": ""
+	}
+}

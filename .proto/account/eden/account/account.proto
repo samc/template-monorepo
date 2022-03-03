@@ -1,0 +1,107 @@
+syntax = "proto3";
+
+package eden.account;
+
+import "eden/db/opts.proto";
+import "google/protobuf/descriptor.proto";
+
+// --=[Account]=---------------------------------------------------------------
+
+message Account {
+  option (eden.db.model).gen = true;
+
+  // The id of the `Account` entity.
+  string id = 1 [(eden.db.attr) = { id: true, default: { cuid: true }}];
+
+  // The email of the `Account` entity.
+  string email = 2 [(eden.db.attr) = { unique: true }];
+
+  Credential credential = 3 [(eden.db.attr) = { optional: true }];
+}
+
+// --=[Credential]=------------------------------------------------------------
+
+// ...
+message Credential {
+  option (eden.db.model).gen = true;
+
+  // The id of the OAuth2 credential entity.
+  string id = 1 [(eden.db.attr) = {
+    id: true
+    default: { cuid: true }
+  }];
+
+  // The parent `Account` entity.
+  Account account = 2 [(eden.db.attr) = {
+    relation: {
+      fields: "accountId"
+      references: "id"
+    }
+  }];
+
+  // A credential entity. See `CredentialBasic` & `CredentialOAuth2`.
+  oneof credential {
+    CredentialBasic basic = 3 [(eden.db.attr) = { optional: true }];
+    CredentialOAuth2 oauth2 = 4 [(eden.db.attr) = { optional: true }];
+  }
+
+  // Indicates the type of credential, available via the `credential` field.
+  CredentialType type = 5;
+}
+
+// ...
+message CredentialBasic {
+  option (eden.db.model).gen = true;
+
+  // The id for the basic credential entity.
+  string id = 1 [(eden.db.attr) = {
+    id: true
+    default: { cuid: true }
+  }];
+
+  // The parent `Credential` entity.
+  Credential credential = 2 [(eden.db.attr) = {
+    relation: {
+      fields: "credentialId"
+      references: "id"
+    }
+  }];
+
+  // The username of the parent `Account` entity.
+  string username = 3;
+
+  // A Salted hash of the parent `Account` entity's password.
+  string hash = 4;
+}
+
+// ...
+message CredentialOAuth2 {
+  option (eden.db.model).gen = true;
+
+  // The id of the OAuth2 credential entity.
+  string id = 1 [(eden.db.attr) = {
+    id: true
+    default: { cuid: true }
+  }];
+
+  // The parent `Credential` entity.
+  Credential credential = 2 [(eden.db.attr) = {
+    relation: {
+      fields: "credentialId"
+      references: "id"
+    }
+  }];
+
+  // The access token of the OAuth2 authorization entity.
+  string access = 3;
+
+  // The refresh token of the OAuth2 authorization entity.
+  string refresh = 4;
+}
+
+// ...
+enum CredentialType {
+  CREDENTIAL_TYPE_UNSPECIFIED = 0;
+  CREDENTIAL_TYPE_BASIC = 1;
+  CREDENTIAL_TYPE_OAUTH2 = 2;
+}

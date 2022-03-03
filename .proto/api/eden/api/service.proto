@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package eden.api;
+
+import "google/protobuf/descriptor.proto";
+
+extend google.protobuf.ServiceOptions {
+  // See `Service`.
+  Service service = 1111110;
+}
+
+message Service {
+  // The name of the service.
+  string name = 1;
+
+  // The address of the service.
+  string endpoint = 2;
+}

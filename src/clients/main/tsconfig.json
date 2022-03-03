@@ -1,0 +1,28 @@
+{
+  "extends": "@eden/config/tsconfig/tsconfig.client.next.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@eden/client.main/*": ["src/*", "src/components/*"],
+      "@eden/client.main/tina/*": [".tina/*", ".tina/lib/*"]
+    },
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin",
+        "tags": ["styled", "css", "sty"]
+      }
+    ]
+  },
+  "references": [
+    { "path": "../../libs/abstract" },
+    { "path": "../../libs/primitives" },
+    { "path": "../../libs/protocol" },
+    { "path": "../../libs/sensors" },
+    { "path": "../../libs/theme" },
+    { "path": "../../libs/types" },
+    { "path": "../../libs/universal" },
+    { "path": "../../libs/utils" }
+  ],
+  "include": ["overrides.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": [".next", ".tmp", "e2e", "node_modules"]
+}

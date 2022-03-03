@@ -1,0 +1,24 @@
+{
+	"Import the spoonful protocol library": {
+		"scope": "typescript,typescriptreact",
+		"prefix": ["import protocol", "ip"],
+		"body": ["import * as Utils from \"@eden/protocol\";"]
+	},
+	"Import the spoonful sensors library": {
+		"scope": "typescript,typescriptreact",
+		"prefix": ["import sensors", "is"],
+		"body": ["import * as Utils from \"@eden/sensors\";"]
+	},
+	"Import the spoonful utility library": {
+		"scope": "typescript,typescriptreact",
+		"prefix": ["import utils", "iu"],
+		"body": ["import * as Utils from \"@eden/utils\";"]
+	},
+	"Import a local module": {
+		"scope": "typescript,typescriptreact",
+		"prefix": ["import local", "il"],
+		"body": [
+			"import * as ${3:Name} from \"@spoonful.${1:type}.${2:name}/${3/(.*)/${1:/downcase}/}\";"
+		]
+	}
+}

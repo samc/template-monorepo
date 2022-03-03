@@ -1,0 +1,12 @@
+{
+  "title": "DeleteAccountRequest",
+  "$id": "DeleteAccountRequest.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "account": {
+      "description": "The `Account` entity to delete.",
+      "$ref": "Account.json"
+    }
+  }
+}

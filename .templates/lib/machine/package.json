@@ -1,0 +1,12 @@
+{
+  "name": "@eden/template.machine",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "create",
+    "update"
+  ],
+  "devDependencies": {
+    "trash-cli": "^5.0.0"
+  }
+}

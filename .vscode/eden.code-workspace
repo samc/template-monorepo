@@ -1,0 +1,511 @@
+{
+  "folders": [
+    {
+      "name": "✨ eden",
+      "path": ".."
+    },
+    {
+      "name": "⚙️ config :: project",
+      "path": "../.config"
+    },
+    {
+      "name": "⚙️ config :: vscode",
+      "path": "../.vscode"
+    },
+    {
+      "name": "⚙️ config :: skaffold",
+      "path": "../.skaffold"
+    },
+    {
+      "name": "🌐 @eden/service.account",
+      "path": "../src/services/account"
+    },
+    {
+      "name": "📟 @eden/client.main",
+      "path": "../src/clients/main"
+    },
+    {
+      "name": "📟 @eden/client.admin",
+      "path": "../src/clients/admin"
+    },
+    {
+      "name": "📦 @eden/abstract",
+      "path": "../src/libs/abstract"
+    },
+    {
+      "name": "📦 @eden/config",
+      "path": "../src/libs/config"
+    },
+    {
+      "name": "📦 @eden/primitives",
+      "path": "../src/libs/primitives"
+    },
+    {
+      "name": "📦 @eden/protocol",
+      "path": "../src/libs/protocol"
+    },
+    {
+      "name": "📦 @eden/sensors",
+      "path": "../src/libs/sensors"
+    },
+    {
+      "name": "📦 @eden/theme",
+      "path": "../src/libs/theme"
+    },
+    {
+      "name": "📦 @eden/types",
+      "path": "../src/libs/types"
+    },
+    {
+      "name": "📦 @eden/universal",
+      "path": "../src/libs/universal"
+    },
+    {
+      "name": "📦 @eden/utils",
+      "path": "../src/libs/utils"
+    },
+    {
+      "name": "🪛 @eden/tool.protoc-gen-prisma",
+      "path": "../src/tools/protoc-gen-prisma"
+    },
+    {
+      "name": "💠 @eden/proto.account",
+      "path": "../.proto/account"
+    },
+    {
+      "name": "💠 @eden/proto.api",
+      "path": "../.proto/api"
+    },
+    {
+      "name": "💠 @eden/proto.db",
+      "path": "../.proto/db"
+    },
+    {
+      "name": "📋 @eden/chart.service",
+      "path": "../.k8s/charts/service"
+    },
+    {
+      "name": "📚 @eden/templates.component",
+      "path": "../.templates/lib/component"
+    },
+    {
+      "name": "📚 @eden/template.generator",
+      "path": "../.templates/lib/generator"
+    },
+    {
+      "name": "📚 @eden/template.machine",
+      "path": "../.templates/lib/machine"
+    },
+    {
+      "name": "📚 @eden/template.service",
+      "path": "../.templates/lib/service"
+    }
+  ],
+  "settings": {
+    "autoBarrel.disableRecursiveBarrelling": true,
+    "autoBarrel.ignoreFilePathContainingAnyOf": ".animator,.assets,.constants,.controller,.data,.errors,.events,.machine,.nodes,.observer,.segments,.styled,.spec,.updaters,.view",
+    "autoBarrel.quoteStyle": "Double",
+    "files.watcherExclude": {
+      "**/.api/*/**": true,
+      "**/.direnv/*/**": true,
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/api/*/**": true,
+      "**/node_modules/*/**": true,
+    },
+    "monorepoWorkspace.folders.custom": [
+      {
+        "regex": ".templates",
+        "prefix": "📚"
+      },
+      {
+        "regex": "clients",
+        "prefix": "📟"
+      },
+      {
+        "regex": "libs",
+        "prefix": "📦"
+      }
+    ],
+    "peacock.remoteColor": "#242245",
+    "python.formatting.provider": "black",
+    "remote.extensionKind": {
+      "vscode-icons-team.vscode-icons": [
+        "workspace"
+      ]
+    },
+    "search.useGlobalIgnoreFiles": true,
+    "typescript.tsdk": "✨ eden/node_modules/typescript/lib",
+    "workbench.colorCustomizations": {
+      "activityBar.activeBackground": "#363367",
+      "activityBar.activeBorder": "#ab5954",
+      "activityBar.background": "#363367",
+      "activityBar.foreground": "#e7e7e7",
+      "activityBar.inactiveForeground": "#e7e7e799",
+      "activityBarBadge.background": "#ab5954",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "sash.hoverBorder": "#363367",
+      "statusBar.background": "#242245",
+      "statusBar.foreground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#363367",
+      "statusBarItem.remoteBackground": "#242245",
+      "statusBarItem.remoteForeground": "#e7e7e7",
+      "titleBar.activeBackground": "#242245",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.inactiveBackground": "#24224599",
+      "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "tailwindCSS.includeLanguages": {
+      "typescript": "javascript",
+      "typescriptreact": "javascript"
+    },
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "tailwindCSS.experimental.classRegex": [
+      "styled`([^`]*)",
+      "styled\\.[^`]+`([^`]*)`",
+      "styled\\(.*?\\).*?`([^`]*)"
+    ],
+    "vsicons.associations.files": [
+      {
+        "icon": "barrel",
+        "format": "svg",
+        "extensions": [
+          ".barrel.json",
+          "barrel.json"
+        ],
+        "filename": true
+      },
+      {
+        "icon": "buf",
+        "format": "svg",
+        "extensions": [
+          "buf.ent.yaml",
+          "buf.go.yaml",
+          "buf.micro.yaml",
+          "buf.gen.yaml",
+          "buf.lock",
+          "buf.work.yaml",
+          "buf.yaml",
+        ],
+        "filename": true
+      },
+      {
+        "icon": "apib",
+        "format": "svg",
+        "extensions": [
+          ".envrc"
+        ],
+        "filename": true
+      },
+      {
+        "icon": "config",
+        "format": "svg",
+        "extensions": [
+          ".shellcheckrc",
+          "pyproject.toml"
+        ],
+        "filename": true
+      },
+      {
+        "icon": "eslint",
+        "format": "svg",
+        "extensions": [
+          "eslint.preset.js",
+          "eslint.preset.client.js",
+          "eslint.preset.client.next.js",
+          "eslint.preset.lib.js",
+          "eslint.preset.lib.react.js"
+        ],
+        "filename": true
+      },
+      {
+        "icon": "graphql_config",
+        "format": "svg",
+        "extensions": [
+          ".graphqlrc.ts"
+        ],
+        "filename": true
+      },
+      {
+        "icon": "hygen",
+        "format": "svg",
+        "extensions": [
+          ".hygen.js"
+        ],
+        "filename": true
+      },
+      {
+        "icon": "jest",
+        "format": "svg",
+        "extensions": [
+          "jest.setup.ts"
+        ],
+        "filename": true
+      },
+      {
+        "icon": "poetry",
+        "format": "svg",
+        "extensions": [
+          "poetry.lock"
+        ],
+        "filename": true
+      },
+      {
+        "icon": "pytyped",
+        "format": "svg",
+        "extensions": [
+          "pyproject.toml"
+        ],
+        "filename": true
+      },
+      {
+        "icon": "next",
+        "format": "svg",
+        "extensions": [
+          "next-env.d.ts"
+        ],
+        "filename": true
+      },
+      {
+        "icon": "relay",
+        "format": "svg",
+        "extensions": [
+          "relay.config.js"
+        ],
+        "filename": true
+      },
+      {
+        "icon": "semantic-release",
+        "format": "png",
+        "extensions": [
+          ".release.json"
+        ],
+        "light": true
+      },
+      {
+        "icon": "skaffold",
+        "format": "svg",
+        "extensions": [
+          "skaffold.yaml",
+          "skaffold.apps.yaml",
+          "skaffold.services.yaml",
+        ],
+        "filename": true
+      },
+      {
+        "icon": "tina",
+        "format": "svg",
+        "extensions": [
+          "plugins.tsx",
+          "schema.ts"
+        ],
+        "filename": true
+      },
+      {
+        "icon": "trunk",
+        "format": "svg",
+        "extensions": [
+          "trunk.yaml"
+        ],
+        "filename": true
+      },
+      {
+        "icon": "tsconfig",
+        "format": "svg",
+        "extensions": [
+          "tsconfig.alias.json",
+          "tsconfig.client.next.json",
+          "tsconfig.default.json",
+          "tsconfig.lib.json",
+          "tsconfig.next.json",
+          "tsconfig.react.json",
+        ],
+        "filename": true
+      },
+      {
+        "icon": "tsstyled",
+        "format": "svg",
+        "extensions": [
+          "styled.tsx",
+        ]
+      },
+      {
+        "icon": "turbo",
+        "format": "png",
+        "extensions": [
+          "turbo.json"
+        ],
+        "filename": true
+      },
+      {
+        "icon": "xstate",
+        "format": "svg",
+        "extensions": [
+          "machine.ts",
+          "machine.typegen.ts",
+          "machine.updaters.ts"
+        ]
+      }
+    ],
+    "vsicons.associations.folders": [
+      {
+        "icon": "bloc",
+        "format": "svg",
+        "extensions": [
+          "elements"
+        ]
+      },
+      {
+        "icon": "blueprint",
+        "format": "svg",
+        "extensions": [
+          ".direnv"
+        ]
+      },
+      {
+        "icon": "buf",
+        "format": "svg",
+        "extensions": [
+          ".buf"
+        ]
+      },
+      {
+        "icon": "certificate",
+        "format": "svg",
+        "extensions": [
+          "auth",
+        ]
+      },
+      {
+        "icon": "controller",
+        "format": "svg",
+        "extensions": [
+          "producers"
+        ]
+      },
+      {
+        "icon": "entity",
+        "format": "svg",
+        "extensions": [
+          "entity"
+        ]
+      },
+      {
+        "icon": "fonts",
+        "format": "svg",
+        "extensions": [
+          "content"
+        ]
+      },
+      {
+        "icon": "images",
+        "format": "svg",
+        "extensions": [
+          "vsicons-custom-icons"
+        ]
+      },
+      {
+        "icon": "include",
+        "format": "svg",
+        "extensions": [
+          ".linters"
+        ]
+      },
+      {
+        "icon": "log",
+        "format": "svg",
+        "extensions": [
+          ".turbo"
+        ]
+      },
+      {
+        "icon": "model",
+        "format": "svg",
+        "extensions": [
+          ".entity", "blocks", "entity"
+        ]
+      },
+      {
+        "icon": "module",
+        "format": "svg",
+        "extensions": [
+          ".proto"
+        ]
+      },
+      {
+        "icon": "next",
+        "format": "svg",
+        "extensions": [
+          "next"
+        ]
+      },
+      {
+        "icon": "nix",
+        "format": "svg",
+        "extensions": [
+          ".nix",
+          "nix"
+        ]
+      },
+      {
+        "icon": "script",
+        "format": "svg",
+        "extensions": [
+          ".scripts",
+        ]
+      },
+      {
+        "icon": "skaffold",
+        "format": "svg",
+        "extensions": [
+          ".skaffold",
+          "skaffold"
+        ]
+      },
+      {
+        "icon": "template",
+        "format": "svg",
+        "extensions": [
+          "profile"
+        ]
+      },
+      {
+        "icon": "tina",
+        "format": "svg",
+        "extensions": [
+          ".tina"
+        ]
+      },
+      {
+        "icon": "trunk",
+        "format": "svg",
+        "extensions": [
+          ".trunk"
+        ]
+      },
+      {
+        "icon": "xstate",
+        "format": "svg",
+        "extensions": [
+          "machine",
+          "machines"
+        ]
+      }
+    ],
+    "vsicons.customIconFolderPath": "./.vscode",
+    "vsicons.associations.folderDefault.root_folder": {
+      "disabled": true
+    },
+    "vsicons.associations.folderDefault.root_folder_light": {
+      "disabled": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "trunk.io"
+    ]
+  }
+}

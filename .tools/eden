@@ -1,0 +1,3 @@
+#!/usr/bin/env zx
+
+import "../.scripts/index.mjs";

@@ -1,0 +1,32 @@
+{
+  "baseBranch": "origin/main",
+  "pipeline": {
+    "barrel": {
+      "cache": false
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**"]
+    },
+    "clean": {},
+    "dev": {
+      "cache": false
+    },
+    "generate": {
+      "outputs": ["api/**", "src/**"]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "reset": {
+      "cache": false
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "update": {
+      "outputs": ["buf.lock", "go.*", "package.json", "schema.prisma"]
+    }
+  }
+}

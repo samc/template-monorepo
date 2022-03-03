@@ -1,0 +1,12 @@
+version: v1
+managed:
+  enabled: true
+  go_package_prefix:
+    default: eden.account/api
+    except:
+      - buf.build/googleapis/googleapis
+plugins:
+  - name: micro
+    out: api
+    opt:
+      - paths=source_relative

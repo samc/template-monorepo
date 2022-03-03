@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package eden.api;
+
+import "eden/db/opts.proto";
+
+message Category {
+  option (eden.db.model).gen = true;
+
+  string name = 2;
+}

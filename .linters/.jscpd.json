@@ -1,0 +1,23 @@
+{
+  "threshold": 0,
+  "reporters": ["html", "markdown"],
+  "ignore": [
+    "**/*.json",
+    "**/*.yaml",
+    "**/*.yml",
+    "**/*.md",
+    "**/*.html",
+    "**/*.xml",
+    "**/*.typegen.ts",
+    "**/*cache*/**",
+    "**/.direnv/**",
+    "**/.git/**",
+    "**/.next/**",
+    "**/.rbenv/**",
+    "**/.tina/**",
+    "**/.venv/**",
+    "**/.templates/**",
+    "**/node_modules/**",
+    "**/report/**"
+  ]
+}

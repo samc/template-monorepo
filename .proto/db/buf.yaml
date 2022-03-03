@@ -1,0 +1,12 @@
+version: v1
+name: buf.build/eden/db
+deps:
+  - buf.build/googleapis/googleapis
+lint:
+  use:
+    - DEFAULT
+    - UNARY_RPC
+breaking:
+  ignore_unstable_packages: true
+  use:
+    - FILE

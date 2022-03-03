@@ -1,0 +1,11 @@
+{
+  "delete": true,
+  "location": "replace",
+  "structure": "flat",
+  "verbose": false,
+  "include": [".tsx?$"],
+  "exclude": [
+    ".(animator|assets|constants|controller|data|errors|events|machine|nodes|observer|segments|styled|spec|typegen|updaters|view).tsx?$",
+    "/segments/(.*).tsx?$"
+  ]
+}

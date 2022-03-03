@@ -1,0 +1,12 @@
+{
+  "name": "@eden/config",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "eslint",
+    "tsconfig"
+  ],
+  "devDependencies": {
+    "trash-cli": "^5.0.0"
+  }
+}

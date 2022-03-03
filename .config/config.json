@@ -1,0 +1,43 @@
+{
+	"direnv": {
+		"log_format": ""
+	},
+	"init": true,
+	"metadata": {
+		"name": "eden",
+		"nixpkgs_channel": "nixpkgs-unstable",
+		"organization": "growthatco",
+		"owner": "GrowThat Digital Agency, LLC.",
+		"repository": "https://github.com/growthatco/eden",
+		"version": "0.0.0"
+	},
+	"tools": {
+		"golang": {
+			"version": "1.17.6"
+		}
+	},
+	"workspace": {
+		"clients": {
+			"admin": "src/clients/admin",
+			"main": "src/clients/main"
+		},
+		"libraries": {
+			"abstract": "src/libs/abstract",
+			"primitives": "src/libs/primitives",
+			"protocol": "src/libs/protocol",
+			"sensors": "src/libs/sensors",
+			"theme": "src/libs/theme",
+			"types": "src/libs/types",
+			"universal": "src/libs/universal",
+			"utils": "src/libs/utils"
+		},
+		"protos": {
+			"api": ".proto/api",
+			"account": ".proto/account"
+		},
+		"services": {
+			"account": "src/services/auth"
+		}
+	},
+	"stage": "development"
+}

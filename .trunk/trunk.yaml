@@ -1,0 +1,55 @@
+---
+#  ⌜                                   ⌝
+#    See available configurations at:
+#    https://docs.trunk.io/check/config
+#  ⌞                                   ⌟
+
+version: "0.1"
+cli:
+  version: 0.7.0-beta
+lint:
+  enabled:
+    - black-py@21.10b0
+    - buf-breaking@1.0.0-rc6
+    - buf-lint@1.0.0-rc7
+    - eslint@7.32.0
+    - flake8@3.9.2
+    - gitleaks@7.6.1
+    - isort@5.9.3
+    - markdownlint@0.29.0
+    - nixpkgs-fmt@1.2.0
+    - prettier@2.4.1
+    - shellcheck@0.7.2
+    - shfmt@3.4.0
+    - taplo@release-cli-0.5.0
+    - taplo-fmt@release-cli-0.5.0
+  files:
+    - name: nix
+      comments:
+        - hash
+      extensions:
+        - nix
+  linters:
+    - name: nixpkgs-fmt
+      run_linter_from: workspace
+      type: rewrite
+      allow_empty_files: false
+      formatter: true
+      good_without_config: true
+      stdin: true
+      files:
+        - nix
+      command:
+        - ${workspace}/.tools/nixpkgs-fmt
+      success_codes:
+        - 0
+        - 1
+      version:
+        command:
+          - nixpkgs-fmt
+          - --version
+        parse_regex: nixpkgs-fmt (.*)
+  ignore:
+    - linters: [ALL]
+      paths:
+        - "**/__generated__/**"

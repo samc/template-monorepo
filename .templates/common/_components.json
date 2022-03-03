@@ -1,0 +1,70 @@
+{
+  "variants": {
+    "block": {
+      "options": {
+        "animator": true,
+        "assets": true,
+        "controller": true,
+        "machine": true,
+        "observer": true,
+        "segments": false,
+        "styled": true
+      }
+    },
+    "element": {
+      "options": {
+        "animator": true,
+        "assets": true,
+        "controller": true,
+        "machine": true,
+        "observer": true,
+        "segments": false,
+        "styled": true
+      }
+    },
+    "layout": {
+      "options": {
+        "animator": false,
+        "assets": true,
+        "controller": false,
+        "machine": false,
+        "observer": false,
+        "segments": false,
+        "styled": true
+      }
+    },
+    "module": {
+      "options": {
+        "animator": true,
+        "assets": true,
+        "controller": true,
+        "machine": true,
+        "observer": true,
+        "segments": true,
+        "styled": true
+      }
+    },
+    "producer": {
+      "options": {
+        "animator": true,
+        "assets": true,
+        "controller": true,
+        "machine": true,
+        "observer": true,
+        "segments": true,
+        "styled": true
+      }
+    },
+    "template": {
+      "options": {
+        "animator": true,
+        "assets": true,
+        "controller": true,
+        "machine": true,
+        "observer": true,
+        "segments": true,
+        "styled": true
+      }
+    }
+  }
+}

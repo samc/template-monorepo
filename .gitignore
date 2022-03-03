@@ -1,0 +1,38 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/dist
+/out-tsc
+.next/
+
+# Dependencies
+/.direnv
+node_modules
+
+# IDEs and editors
+/.idea
+.c9/
+.classpath
+.project
+*.launch
+*.sublime-workspace
+
+# Development Artifacts
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+/tmp
+/typings
+npm-debug.log
+yarn-error.log
+testem.log
+.env
+.env.*
+.turbo
+**/__pycache__
+
+# System Files
+Thumbs.db
+.DS_Store
+*.pem

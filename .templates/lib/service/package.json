@@ -1,0 +1,14 @@
+{
+  "name": "@eden/template.service",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "update"
+  ],
+  "devDependencies": {
+    "trash-cli": "^5.0.0"
+  },
+  "dependencies": {
+    "inflection": "^1.13.2"
+  }
+}

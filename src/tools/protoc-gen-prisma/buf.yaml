@@ -1,0 +1,12 @@
+version: v1
+deps:
+  - buf.build/eden/account
+lint:
+  use:
+    - DEFAULT
+    - UNARY_RPC
+  except:
+    - PACKAGE_VERSION_SUFFIX
+breaking:
+  use:
+    - FILE

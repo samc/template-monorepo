@@ -1,0 +1,12 @@
+{
+  "extends": "@eden/config/tsconfig/tsconfig.lib.json",
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@eden/abstract/*": ["./*", "./lib/*"]
+    }
+  },
+  "include": ["overrides.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["dist", "node_modules"]
+}

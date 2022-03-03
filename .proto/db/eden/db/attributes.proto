@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package eden.db;
+
+import "google/protobuf/any.proto";
+
+message Attributes {
+  bool optional = 1;
+  bool unique = 2;
+  bool id = 3;
+  bool updatedAt = 4;
+  AttributesDefault default = 5;
+  AttributesRelation relation = 6;
+}
+
+message AttributesDefault {
+  google.protobuf.Any value = 5;
+  bool autoincrement = 6;
+  bool dbgenerated = 7;
+  bool cuid = 8;
+  bool uuid = 9;
+  bool now = 10;
+}
+
+message AttributesRelation {
+  string name = 1;
+  repeated string fields = 2;
+  repeated string references = 3;
+}

@@ -1,0 +1,28 @@
+#  ⌜                                          ⌝
+#    See available configurations at:
+#    https://skaffold.dev/docs/references/yaml
+#  ⌞                                          ⌟
+---
+apiVersion: skaffold/v2beta26
+kind: Config
+metadata:
+  name: root
+build:
+  local:
+    push: false
+    concurrency: 0
+requires:
+  - configs: [apps]
+    path: .skaffold/skaffold.apps.yaml
+    activeProfiles:
+      - name: build
+        activatedBy: [build]
+  - configs: [services]
+    path: .skaffold/skaffold.services.yaml
+    activeProfiles:
+      - name: build
+        activatedBy: [build]
+profiles:
+  - name: build
+    activation:
+      - command: build

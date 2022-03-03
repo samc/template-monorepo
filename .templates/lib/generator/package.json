@@ -1,0 +1,11 @@
+{
+  "name": "@eden/template.generator",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "create"
+  ],
+  "devDependencies": {
+    "trash-cli": "^5.0.0"
+  }
+}

@@ -1,0 +1,48 @@
+#  ⌜                                          ⌝
+#    See available configurations at:
+#    https://skaffold.dev/docs/references/yaml
+#  ⌞                                          ⌟
+---
+apiVersion: skaffold/v2beta26
+kind: Config
+metadata:
+  name: services
+build:
+  local:
+    push: false
+  artifacts:
+    # ===[Build: Service.Account]===
+    - image: service-account
+      context: ../src/services/account
+      sync:
+        infer:
+          - api/**/*
+          - cmd/**/*
+          - config/**/*
+          - src/**/*
+      docker:
+        dockerfile: .docker/.development.dockerfile
+        buildArgs:
+          GOLANG_VERSION: "{{ .TOOLS_GOLANG_VERSION }}"
+deploy:
+  helm:
+    releases:
+      # ===[Build: Service.Account]===
+      - name: service-account
+        chartPath: ../.k8s/charts/service
+        artifactOverrides:
+          image: service-account
+        setValueTemplates:
+          service.port: 3000
+        valuesFiles:
+          - .env.yaml
+        imageStrategy:
+          helm: {}
+profiles:
+  - name: build
+    patches:
+      - op: replace
+        path: /build/artifacts/0/docker/dockerfile
+        value: .docker/.build.dockerfile
+  - name: development
+  - name: production
