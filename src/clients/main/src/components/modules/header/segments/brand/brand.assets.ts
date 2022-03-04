@@ -1,1 +1,1 @@
-export { ReactComponent as Logo } from "@eden/client.main/assets/logo.svg";
+export { ReactComponent as Logo } from "@taygo/client.main/assets/logo.svg";

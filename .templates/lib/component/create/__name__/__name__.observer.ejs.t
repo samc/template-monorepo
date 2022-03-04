@@ -3,8 +3,8 @@ to: "<%= options.observer && options.controller ? `${target}/${fileName}/${fileN
 ---
 import * as React from "react";
 
-import * as Abstract from "@eden/abstract";
-import * as Sensors from "@eden/sensors";
+import * as Abstract from "@taygo/abstract";
+import * as Sensors from "@taygo/sensors";
 
 import * as TS from "$ts";
 import * as Utils from "$utils";

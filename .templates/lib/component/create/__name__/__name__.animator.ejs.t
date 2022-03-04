@@ -4,7 +4,7 @@ to: "<%= options.observer && options.controller ? `${target}/${fileName}/${fileN
 import * as Spring from "@react-spring/web";
 import * as React from "react";
 
-import * as Abstract from "@eden/abstract";
+import * as Abstract from "@taygo/abstract";
 
 import * as TS from "$ts";
 import * as Utils from "$utils";

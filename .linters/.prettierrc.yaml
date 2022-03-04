@@ -16,7 +16,7 @@ importOrderSeparation: true
 importOrderSortSpecifiers: true
 importOrder:
   - <THIRD_PARTY_MODULES>
-  - ^@eden\/(.*)$
+  - ^@taygo\/(.*)$
   - ^\$((?!ts|utils).)*$
   - ^\$(.*)$
   - ^\.\/(.*)\.((?!animator|controller|observer|view).)*$

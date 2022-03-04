@@ -1,6 +1,6 @@
 import React from "react";
 
-import * as Primitives from "@eden/abstract/primitives";
+import * as Primitives from "@taygo/abstract/primitives";
 
 import { ClassStatics } from "./_class-statics";
 

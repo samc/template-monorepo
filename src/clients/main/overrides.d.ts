@@ -2,11 +2,11 @@ import "@xstyled/system";
 import "next/app";
 import "styled-components";
 
-import "@eden/types/overrides/extensions";
-import "@eden/types/overrides/intl";
-import "@eden/types/overrides/object";
+import "@taygo/types/overrides/extensions";
+import "@taygo/types/overrides/intl";
+import "@taygo/types/overrides/object";
 
-type DefaultTheme = import("@eden/client.main/theme").DefaultTheme;
+type DefaultTheme = import("@taygo/client.main/theme").DefaultTheme;
 
 declare module "@xstyled/system" {
 	export interface Theme extends DefaultTheme {}

@@ -1,7 +1,7 @@
-// import * as Protocol from "@eden/protocol";
+// import * as Protocol from "@taygo/protocol";
 // import * as Testing from "@testing-library/react";
 
-// import * as TS from "@eden/sensors/universal/ts";
+// import * as TS from "@taygo/sensors/universal/ts";
 
 // import * as Locale from "./locale";
 // import * as Props from "./locale.constants";

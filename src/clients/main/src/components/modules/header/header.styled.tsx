@@ -4,9 +4,9 @@ import * as System from "styled-system";
 import { animated } from "@react-spring/web";
 import { default as styled } from "styled-components";
 
-import * as Theme from "@eden/client.main/theme";
+import * as Theme from "@taygo/client.main/theme";
 
-import * as Utils from "@eden/client.main/utils";
+import * as Utils from "@taygo/client.main/utils";
 
 import * as Assets from "./header.assets";
 

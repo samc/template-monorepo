@@ -1,6 +1,6 @@
 import * as Hoist from "hoist-non-react-statics";
 import * as React from "react";
 
-import * as Utils from "@eden/universal/utils";
+import * as Utils from "@taygo/universal/utils";
 
-export * from "@eden/types";
+export * from "@taygo/types";

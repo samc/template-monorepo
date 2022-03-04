@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import * as TS from "@eden/abstract/ts";
+import * as TS from "@taygo/abstract/ts";
 
 /**
  * Creates a factory that returns a context `Component` with a given context type.

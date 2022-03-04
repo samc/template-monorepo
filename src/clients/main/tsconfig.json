@@ -1,10 +1,10 @@
 {
-  "extends": "@eden/config/tsconfig/tsconfig.client.next.json",
+  "extends": "@taygo/config/tsconfig/tsconfig.client.next.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@eden/client.main/*": ["src/*", "src/components/*"],
-      "@eden/client.main/tina/*": [".tina/*", ".tina/lib/*"]
+      "@taygo/client.main/*": ["src/*", "src/components/*"],
+      "@taygo/client.main/tina/*": [".tina/*", ".tina/lib/*"]
     },
     "plugins": [
       {

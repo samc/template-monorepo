@@ -1,10 +1,10 @@
 import * as Immer from "immer";
 import * as React from "react";
 
-import * as Universal from "@eden/universal";
+import * as Universal from "@taygo/universal";
 
-import * as TS from "@eden/sensors/ts";
-import * as Utils from "@eden/sensors/utils";
+import * as TS from "@taygo/sensors/ts";
+import * as Utils from "@taygo/sensors/utils";
 
 import * as Constants from "./measure.constants";
 import * as Errors from "./measure.errors";

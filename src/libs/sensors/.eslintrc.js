@@ -1,1 +1,1 @@
-module.exports = require("@eden/config/eslint/eslintrc.preset.lib.react");
+module.exports = require("@taygo/config/eslint/eslintrc.preset.lib.react");

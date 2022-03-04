@@ -1,8 +1,8 @@
 import * as Leva from "leva";
 import * as React from "react";
 
-import * as Sensors from "@eden/sensors";
-import * as Utils from "@eden/utils";
+import * as Sensors from "@taygo/sensors";
+import * as Utils from "@taygo/utils";
 
 import * as Constants from "./brand.constants";
 import * as Data from "./brand.data";

@@ -3,7 +3,7 @@ to: "<%= options.controller ? `${target}/${fileName}/${fileName}.controller.tsx`
 ---
 import * as React from "react";
 
-import * as Abstract from "@eden/abstract";
+import * as Abstract from "@taygo/abstract";
 
 import * as Machines from "$machines";
 import * as TS from "$ts";

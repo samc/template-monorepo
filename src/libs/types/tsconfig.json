@@ -1,9 +1,9 @@
 {
-  "extends": "@eden/config/tsconfig/tsconfig.lib.json",
+  "extends": "@taygo/config/tsconfig/tsconfig.lib.json",
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@eden/types/*": ["./*", "./lib/*"]
+      "@taygo/types/*": ["./*", "./lib/*"]
     }
   },
   "include": ["./index.d.ts", "./src/**/*.ts", "./src/**/*.tsx"],

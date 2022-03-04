@@ -1,2 +1,2 @@
-import "@eden/types/overrides/intl";
-import "@eden/types/overrides/object";
+import "@taygo/types/overrides/intl";
+import "@taygo/types/overrides/object";

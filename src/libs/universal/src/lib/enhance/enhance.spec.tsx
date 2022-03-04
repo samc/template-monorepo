@@ -1,11 +1,11 @@
 import * as Testing from "@testing-library/react";
 import * as React from "react";
 
-import * as Util from "@eden/universal/universal/util";
-import { enhance } from "@eden/universal/universal/lib/enhance/enhance";
-import { render, Render } from "@eden/universal/universal/lib/render/render";
+import * as Util from "@taygo/universal/universal/util";
+import { enhance } from "@taygo/universal/universal/lib/enhance/enhance";
+import { render, Render } from "@taygo/universal/universal/lib/render/render";
 
-import * as TS from "@eden/universal/universal/ts";
+import * as TS from "@taygo/universal/universal/ts";
 
 const COMPONENT_ID = "render";
 

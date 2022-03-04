@@ -1,1 +1,1 @@
-export * from "@eden/types";
+export * from "@taygo/types";

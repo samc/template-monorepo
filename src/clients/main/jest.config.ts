@@ -7,7 +7,7 @@ const createJestConfig = NJ({
 const config = {
 	setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
 	moduleNameMapper: {
-		"^@eden/client.main/(.*)$": [
+		"^@taygo/client.main/(.*)$": [
 			"<rootDir>/src/$1",
 			"<rootDir>/src/components/$1",
 		],

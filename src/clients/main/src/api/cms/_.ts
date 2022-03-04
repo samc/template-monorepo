@@ -1,1 +1,1 @@
-export * from "@eden/client.main/tina/__generated__/types";
+export * from "@taygo/client.main/tina/__generated__/types";

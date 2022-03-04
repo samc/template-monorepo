@@ -1,11 +1,11 @@
 import * as Testing from "@testing-library/react";
 import * as React from "react";
 
-import { compose } from "@eden/universal/universal/lib/compose/compose";
-import { createEnhancer } from "@eden/universal/universal/lib/create-enhancer/create-enhancer";
-import { render, Render } from "@eden/universal/universal/lib/render/render";
+import { compose } from "@taygo/universal/universal/lib/compose/compose";
+import { createEnhancer } from "@taygo/universal/universal/lib/create-enhancer/create-enhancer";
+import { render, Render } from "@taygo/universal/universal/lib/render/render";
 
-import * as TS from "@eden/universal/universal/ts";
+import * as TS from "@taygo/universal/universal/ts";
 
 const COMPONENT_ID = "render";
 

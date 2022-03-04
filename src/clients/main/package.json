@@ -1,5 +1,5 @@
 {
-  "name": "@eden/client.main",
+  "name": "@taygo/client.main",
   "version": "0.0.0",
   "private": true,
   "exports": {
@@ -11,18 +11,18 @@
   },
   "scripts": {
     "barrel": "barrelsby --config=.barrel.json",
-    "dev": "tinacms server:start -c \"next dev --port 3000\"",
-    "build": "tinacms server:start -c \"next build\"",
+    "dev": "next dev --port 3000",
+    "build": "next build",
     "relay": "relay-compiler",
-    "start": "tinacms server:start -c \"next start\"",
+    "start": "next start",
     "test": "jest --watch",
     "update": "ncu --upgrade --packageFile package.json"
   },
   "dependencies": {
-    "@eden/abstract": "^0.0.0",
-    "@eden/protocol": "^0.0.0",
-    "@eden/sensors": "^0.0.0",
-    "@eden/utils": "^0.0.0",
+    "@taygo/abstract": "^0.0.0",
+    "@taygo/protocol": "^0.0.0",
+    "@taygo/sensors": "^0.0.0",
+    "@taygo/utils": "^0.0.0",
     "@react-spring/web": "^9.4.3",
     "@tailwindcss/typography": "^0.5.2",
     "@xstate/immer": "^0.3.1",
@@ -38,8 +38,8 @@
     "xstate": "^4.30.1"
   },
   "devDependencies": {
-    "@eden/config": "^0.0.0",
-    "@eden/types": "^0.0.0",
+    "@taygo/config": "^0.0.0",
+    "@taygo/types": "^0.0.0",
     "@next/bundle-analyzer": "^12.0.10",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",

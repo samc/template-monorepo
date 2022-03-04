@@ -6,15 +6,15 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 	enabled: process.env.ANALYZE === "true",
 });
 const withModules = require("next-transpile-modules")([
-	"@eden/abstract",
-	"@eden/config",
-	"@eden/primitives",
-	"@eden/protocol",
-	"@eden/sensors",
-	"@eden/theme",
-	"@eden/types",
-	"@eden/universal",
-	"@eden/utils",
+	"@taygo/abstract",
+	"@taygo/config",
+	"@taygo/primitives",
+	"@taygo/protocol",
+	"@taygo/sensors",
+	"@taygo/theme",
+	"@taygo/types",
+	"@taygo/universal",
+	"@taygo/utils",
 ]);
 const withSvgr = require("next-svgr");
 

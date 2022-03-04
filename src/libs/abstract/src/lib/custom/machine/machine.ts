@@ -1,8 +1,8 @@
 import * as Immer from "@xstate/immer";
 import * as XS from "xstate";
 
-import * as TS from "@eden/abstract/ts";
-import * as Utils from "@eden/abstract/utils";
+import * as TS from "@taygo/abstract/ts";
+import * as Utils from "@taygo/abstract/utils";
 
 export abstract class Machine<
 	TContext extends Machine.Context,

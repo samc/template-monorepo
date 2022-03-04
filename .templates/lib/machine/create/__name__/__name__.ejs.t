@@ -3,7 +3,7 @@ to: "<%= type.name === 'client' ? `${dir}/${fileName}.ts` : type.name === 'lib' 
 ---
 import * as XS from "xstate";
 
-import * as Abstract from "@eden/abstract";
+import * as Abstract from "@taygo/abstract";
 
 import * as Updaters from "./<%= fileName %>.updaters";
 

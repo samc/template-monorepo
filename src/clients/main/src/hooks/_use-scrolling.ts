@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import * as Utils from "@eden/utils";
+import * as Utils from "@taygo/utils";
 
 export const useScrolling = (ref: React.RefObject<HTMLElement>): boolean => {
 	const [scrolling, setScrolling] = React.useState<boolean>(false);

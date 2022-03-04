@@ -2,10 +2,10 @@ import * as Immer from "immer";
 import * as React from "react";
 import * as XS from "xstate";
 
-import * as Custom from "@eden/abstract/custom";
-import * as Primitives from "@eden/abstract/primitives";
-import * as TS from "@eden/abstract/ts";
-import * as Utils from "@eden/abstract/utils";
+import * as Custom from "@taygo/abstract/custom";
+import * as Primitives from "@taygo/abstract/primitives";
+import * as TS from "@taygo/abstract/ts";
+import * as Utils from "@taygo/abstract/utils";
 
 export abstract class Controller<
 	TProps extends Controller.Props<TMachines>,

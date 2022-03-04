@@ -1,10 +1,10 @@
 import * as Next from "next";
 
-import * as Api from "@eden/client.main/api";
-import * as Templates from "@eden/client.main/templates";
-import * as Blocks from "@eden/client.main/blocks";
-import * as TS from "@eden/client.main/ts";
-import * as Utils from "@eden/client.main/utils";
+import * as Api from "@taygo/client.main/api";
+import * as Templates from "@taygo/client.main/templates";
+import * as Blocks from "@taygo/client.main/blocks";
+import * as TS from "@taygo/client.main/ts";
+import * as Utils from "@taygo/client.main/utils";
 
 export default function Router(props: TS.StaticProps["props"]) {
 	const { data, params } = props;

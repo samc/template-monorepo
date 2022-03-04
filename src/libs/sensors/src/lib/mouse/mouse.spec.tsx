@@ -1,7 +1,7 @@
 import * as Testing from "@testing-library/react";
 import * as React from "react";
 
-import * as TS from "@eden/sensors/universal/ts";
+import * as TS from "@taygo/sensors/universal/ts";
 
 import * as Props from "./mouse.constants";
 

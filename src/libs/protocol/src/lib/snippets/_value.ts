@@ -1,4 +1,4 @@
-import { Unit } from "@eden/protocol/constants";
+import { Unit } from "@taygo/protocol/constants";
 
 /**
  * Normalizes CSS units to the specified <Unit> specification

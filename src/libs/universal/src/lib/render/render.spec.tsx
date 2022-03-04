@@ -1,9 +1,9 @@
 import * as Testing from "@testing-library/react";
 import * as React from "react";
 
-import * as Util from "@eden/universal/universal/util";
+import * as Util from "@taygo/universal/universal/util";
 
-import * as TS from "@eden/universal/universal/ts";
+import * as TS from "@taygo/universal/universal/ts";
 
 import { render, Render } from "./render";
 

@@ -1,11 +1,11 @@
 import * as React from "react";
 
-import * as Abstract from "@eden/abstract";
+import * as Abstract from "@taygo/abstract";
 
-import * as Machines from "@eden/client.main/machines";
+import * as Machines from "@taygo/client.main/machines";
 
-import * as TS from "@eden/client.main/ts";
-import * as Utils from "@eden/client.main/utils";
+import * as TS from "@taygo/client.main/ts";
+import * as Utils from "@taygo/client.main/utils";
 
 import * as Constants from "./home.constants";
 import * as Machine from "./home.machine";

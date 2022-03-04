@@ -1,6 +1,6 @@
 import * as XS from "xstate";
 
-import * as Abstract from "@eden/abstract";
+import * as Abstract from "@taygo/abstract";
 
 import * as Updaters from "./machine.updaters";
 

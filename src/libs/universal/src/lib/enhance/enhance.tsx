@@ -1,8 +1,8 @@
 import * as Hoist from "hoist-non-react-statics";
 import * as React from "react";
 
-import * as TS from "@eden/universal/ts";
-import * as Utils from "@eden/universal/utils";
+import * as TS from "@taygo/universal/ts";
+import * as Utils from "@taygo/universal/utils";
 
 /**
  * Creates a Higher-Order Component (HOC) from a universally rendered component.

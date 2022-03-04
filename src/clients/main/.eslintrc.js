@@ -1,1 +1,1 @@
-module.exports = require("@eden/config/eslint/eslint.preset.client.next");
+module.exports = require("@taygo/config/eslint/eslint.preset.client.next");

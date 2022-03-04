@@ -1,4 +1,4 @@
-import * as Common from "@eden/sensors/common";
+import * as Common from "@taygo/sensors/common";
 
 export const COMPONENT_ID = "Sensor.Locale";
 

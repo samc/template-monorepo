@@ -1,4 +1,4 @@
-import { Position } from "@eden/protocol/constants";
+import { Position } from "@taygo/protocol/constants";
 
 export function isPositionHorizontal(position: Position) {
 	return (

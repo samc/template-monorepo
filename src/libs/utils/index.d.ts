@@ -1,1 +1,1 @@
-import "@eden/types/overrides/object";
+import "@taygo/types/overrides/object";

@@ -1,6 +1,6 @@
 import * as RX from "redux";
 
-import * as TS from "@eden/universal/ts";
+import * as TS from "@taygo/universal/ts";
 
 /**
  * Composes higher-order enhancer components, resulting in a composite HOC,

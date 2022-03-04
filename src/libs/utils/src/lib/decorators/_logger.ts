@@ -1,4 +1,4 @@
-import * as Protocol from "@eden/protocol";
+import * as Protocol from "@taygo/protocol";
 
 export const debug = (logLevel: Protocol.LogLevel = Protocol.LogLevel.INFO) => {
 	return (

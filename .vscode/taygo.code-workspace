@@ -1,7 +1,7 @@
 {
   "folders": [
     {
-      "name": "✨ eden",
+      "name": "✨ taygo",
       "path": ".."
     },
     {
@@ -17,87 +17,80 @@
       "path": "../.skaffold"
     },
     {
-      "name": "🌐 @eden/service.account",
+      "name": "🌐 @taygo/service.account",
       "path": "../src/services/account"
     },
     {
-      "name": "📟 @eden/client.main",
+      "name": "📟 @taygo/client.main",
       "path": "../src/clients/main"
     },
+
     {
-      "name": "📟 @eden/client.admin",
-      "path": "../src/clients/admin"
-    },
-    {
-      "name": "📦 @eden/abstract",
+      "name": "📦 @taygo/abstract",
       "path": "../src/libs/abstract"
     },
     {
-      "name": "📦 @eden/config",
+      "name": "📦 @taygo/config",
       "path": "../src/libs/config"
     },
     {
-      "name": "📦 @eden/primitives",
+      "name": "📦 @taygo/primitives",
       "path": "../src/libs/primitives"
     },
     {
-      "name": "📦 @eden/protocol",
+      "name": "📦 @taygo/protocol",
       "path": "../src/libs/protocol"
     },
     {
-      "name": "📦 @eden/sensors",
+      "name": "📦 @taygo/sensors",
       "path": "../src/libs/sensors"
     },
     {
-      "name": "📦 @eden/theme",
+      "name": "📦 @taygo/theme",
       "path": "../src/libs/theme"
     },
     {
-      "name": "📦 @eden/types",
+      "name": "📦 @taygo/types",
       "path": "../src/libs/types"
     },
     {
-      "name": "📦 @eden/universal",
+      "name": "📦 @taygo/universal",
       "path": "../src/libs/universal"
     },
     {
-      "name": "📦 @eden/utils",
+      "name": "📦 @taygo/utils",
       "path": "../src/libs/utils"
     },
     {
-      "name": "🪛 @eden/tool.protoc-gen-prisma",
-      "path": "../src/tools/protoc-gen-prisma"
-    },
-    {
-      "name": "💠 @eden/proto.account",
+      "name": "💠 @taygo/proto.account",
       "path": "../.proto/account"
     },
     {
-      "name": "💠 @eden/proto.api",
+      "name": "💠 @taygo/proto.api",
       "path": "../.proto/api"
     },
     {
-      "name": "💠 @eden/proto.db",
+      "name": "💠 @taygo/proto.db",
       "path": "../.proto/db"
     },
     {
-      "name": "📋 @eden/chart.service",
+      "name": "📋 @taygo/chart.service",
       "path": "../.k8s/charts/service"
     },
     {
-      "name": "📚 @eden/templates.component",
+      "name": "📚 @taygo/templates.component",
       "path": "../.templates/lib/component"
     },
     {
-      "name": "📚 @eden/template.generator",
+      "name": "📚 @taygo/template.generator",
       "path": "../.templates/lib/generator"
     },
     {
-      "name": "📚 @eden/template.machine",
+      "name": "📚 @taygo/template.machine",
       "path": "../.templates/lib/machine"
     },
     {
-      "name": "📚 @eden/template.service",
+      "name": "📚 @taygo/template.service",
       "path": "../.templates/lib/service"
     }
   ],
@@ -127,7 +120,7 @@
         "prefix": "📦"
       }
     ],
-    "peacock.remoteColor": "#242245",
+    "peacock.remoteColor": "#1dd89b",
     "python.formatting.provider": "black",
     "remote.extensionKind": {
       "vscode-icons-team.vscode-icons": [
@@ -135,25 +128,25 @@
       ]
     },
     "search.useGlobalIgnoreFiles": true,
-    "typescript.tsdk": "✨ eden/node_modules/typescript/lib",
+    "typescript.tsdk": "✨ taygo/node_modules/typescript/lib",
     "workbench.colorCustomizations": {
-      "activityBar.activeBackground": "#363367",
-      "activityBar.activeBorder": "#ab5954",
-      "activityBar.background": "#363367",
-      "activityBar.foreground": "#e7e7e7",
-      "activityBar.inactiveForeground": "#e7e7e799",
-      "activityBarBadge.background": "#ab5954",
-      "activityBarBadge.foreground": "#e7e7e7",
-      "sash.hoverBorder": "#363367",
-      "statusBar.background": "#242245",
-      "statusBar.foreground": "#e7e7e7",
-      "statusBarItem.hoverBackground": "#363367",
-      "statusBarItem.remoteBackground": "#242245",
-      "statusBarItem.remoteForeground": "#e7e7e7",
-      "titleBar.activeBackground": "#242245",
-      "titleBar.activeForeground": "#e7e7e7",
-      "titleBar.inactiveBackground": "#24224599",
-      "titleBar.inactiveForeground": "#e7e7e799"
+      "activityBar.activeBackground": "#42e6b0",
+      "activityBar.activeBorder": "#b856e9",
+      "activityBar.background": "#42e6b0",
+      "activityBar.foreground": "#15202b",
+      "activityBar.inactiveForeground": "#15202b99",
+      "activityBarBadge.background": "#b856e9",
+      "activityBarBadge.foreground": "#15202b",
+      "sash.hoverBorder": "#42e6b0",
+      "statusBar.background": "#1dd89b",
+      "statusBar.foreground": "#15202b",
+      "statusBarItem.hoverBackground": "#17ab7b",
+      "statusBarItem.remoteBackground": "#1dd89b",
+      "statusBarItem.remoteForeground": "#15202b",
+      "titleBar.activeBackground": "#1dd89b",
+      "titleBar.activeForeground": "#15202b",
+      "titleBar.inactiveBackground": "#1dd89b99",
+      "titleBar.inactiveForeground": "#15202b99"
     },
     "tailwindCSS.includeLanguages": {
       "typescript": "javascript",

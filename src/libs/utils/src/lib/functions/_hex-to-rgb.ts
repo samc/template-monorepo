@@ -1,4 +1,4 @@
-import * as TS from "@eden/utils/ts";
+import * as TS from "@taygo/utils/ts";
 
 export function hexToRgb(hex: string): TS.Rgb | null {
 	const sanitizedHex = hex.replaceAll("##", "#");

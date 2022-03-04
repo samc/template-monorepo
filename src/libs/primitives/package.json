@@ -1,5 +1,5 @@
 {
-  "name": "@eden/primitives",
+  "name": "@taygo/primitives",
   "version": "0.0.0",
   "private": true,
   "main": "./src/index.ts",
@@ -16,8 +16,8 @@
     ]
   },
   "devDependencies": {
-    "@eden/config": "^0.0.0",
-    "@eden/types": "^0.0.0",
+    "@taygo/config": "^0.0.0",
+    "@taygo/types": "^0.0.0",
     "@types/node": "^17.0.18",
     "@types/react": "^17.0.39",
     "barrelsby": "^2.3.2",

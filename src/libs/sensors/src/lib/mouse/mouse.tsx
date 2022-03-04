@@ -1,10 +1,10 @@
 import * as Immer from "immer";
 import * as React from "react";
 
-import * as Universal from "@eden/universal";
+import * as Universal from "@taygo/universal";
 
-import * as TS from "@eden/sensors/ts";
-import * as Utils from "@eden/sensors/utils";
+import * as TS from "@taygo/sensors/ts";
+import * as Utils from "@taygo/sensors/utils";
 
 import * as Constants from "./mouse.constants";
 import * as Errors from "./mouse.errors";
@@ -183,6 +183,7 @@ export class Mouse extends React.Component<MouseSensorProps, MouseSensorState> {
 			width: elW,
 			height: elH,
 		} = this.element!.getBoundingClientRect();
+
 		const posX = left + window.pageXOffset;
 		const posY = top + window.pageYOffset;
 		const elX = event.pageX - posX;

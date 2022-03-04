@@ -3,8 +3,8 @@ import * as React from "react";
 import { default as NextDynamic } from "next/dynamic";
 import { TinaEditProvider } from "tinacms/dist/edit-state";
 
-import * as TS from "@eden/client.main/ts";
-import * as Utils from "@eden/client.main/utils";
+import * as TS from "@taygo/client.main/ts";
+import * as Utils from "@taygo/client.main/utils";
 
 import * as Constants from "./content.constants";
 

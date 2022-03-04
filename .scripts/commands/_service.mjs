@@ -29,7 +29,7 @@ export function service(config) {
 		.description("Runs a command at the service level")
 		.action((commands, options) => {
 			const { scope } = options;
-			$`npx --workspace=@eden/service.${scope} ${commands}`;
+			$`npx --workspace=@taygo/service.${scope} ${commands}`;
 		});
 
 	return service;

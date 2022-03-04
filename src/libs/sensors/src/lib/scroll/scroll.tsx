@@ -1,10 +1,10 @@
 import * as React from "react";
 
-import * as Abstract from "@eden/abstract";
-import * as Universal from "@eden/universal";
+import * as Abstract from "@taygo/abstract";
+import * as Universal from "@taygo/universal";
 
-import * as TS from "@eden/sensors/ts";
-import * as Utils from "@eden/sensors/utils";
+import * as TS from "@taygo/sensors/ts";
+import * as Utils from "@taygo/sensors/utils";
 
 import * as Constants from "./scroll.constants";
 import * as Errors from "./scroll.errors";

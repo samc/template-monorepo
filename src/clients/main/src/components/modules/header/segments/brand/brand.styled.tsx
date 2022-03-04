@@ -4,7 +4,7 @@ import * as React from "react";
 import { animated } from "@react-spring/web";
 import { default as styled } from "@xstyled/styled-components";
 
-import * as Utils from "@eden/utils";
+import * as Utils from "@taygo/utils";
 
 import * as Assets from "./brand.assets";
 

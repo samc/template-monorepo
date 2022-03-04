@@ -1,6 +1,6 @@
-import * as Utils from "@eden/utils";
+import * as Utils from "@taygo/utils";
 
-import * as TS from "@eden/theme/ts";
+import * as TS from "@taygo/theme/ts";
 
 const defaultAlphaLevels = [
 	TS.ThemeColorAlphaLevel._0,

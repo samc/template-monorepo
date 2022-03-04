@@ -3,7 +3,7 @@
  */
 import * as React from "react";
 
-import * as Utils from "@eden/utils";
+import * as Utils from "@taygo/utils";
 
 import { useRafState } from "./_use-raf-state";
 

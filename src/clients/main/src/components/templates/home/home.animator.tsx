@@ -1,10 +1,10 @@
 import * as Spring from "@react-spring/web";
 import * as React from "react";
 
-import * as Abstract from "@eden/abstract";
+import * as Abstract from "@taygo/abstract";
 
-import * as TS from "@eden/client.main/ts";
-import * as Utils from "@eden/client.main/utils";
+import * as TS from "@taygo/client.main/ts";
+import * as Utils from "@taygo/client.main/utils";
 
 import * as Constants from "./home.constants";
 

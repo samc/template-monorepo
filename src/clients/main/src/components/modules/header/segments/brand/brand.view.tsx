@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import * as Utils from "@eden/utils";
+import * as Utils from "@taygo/utils";
 
 import * as Constants from "./brand.constants";
 import * as Nodes from "./brand.nodes";

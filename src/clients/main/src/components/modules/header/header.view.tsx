@@ -1,9 +1,9 @@
 import * as Leva from "leva";
 import * as React from "react";
 
-import * as Elements from "@eden/client.main/elements";
-import * as TS from "@eden/client.main/ts";
-import * as Utils from "@eden/client.main/utils";
+import * as Elements from "@taygo/client.main/elements";
+import * as TS from "@taygo/client.main/ts";
+import * as Utils from "@taygo/client.main/utils";
 
 import * as Constants from "./header.constants";
 import * as Machine from "./header.machine";

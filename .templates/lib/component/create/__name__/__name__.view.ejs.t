@@ -6,12 +6,12 @@ import * as Leva from "leva";
 <% } -%>
 import * as React from "react";
 
-import * as Elements from "@eden/client.<%= project.name %>/elements";
+import * as Elements from "@taygo/client.<%= project.name %>/elements";
 <% if (options.controller) { -%>
-import * as Machines from "@eden/client.<%= project.name %>/machines";
+import * as Machines from "@taygo/client.<%= project.name %>/machines";
 <% } -%>
-import * as TS from "@eden/client.<%= project.name %>/ts";
-import * as Utils from "@eden/client.<%= project.name %>/utils";
+import * as TS from "@taygo/client.<%= project.name %>/ts";
+import * as Utils from "@taygo/client.<%= project.name %>/utils";
 
 import * as Constants from "./<%= fileName %>.constants";
 <% if (options.segments) { -%>
@@ -79,9 +79,9 @@ export class View extends React.Component<View.Props, View.State> {
 				<View.Container>
 <% if (variant.name === "layout") { -%>
 					{children}
-<% } else { -%>				
+<% } else { -%>
 					{/* ... */}
-<% } -%>				
+<% } -%>
 				</View.Container>
 			</React.Fragment>
 		);

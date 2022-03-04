@@ -1,12 +1,12 @@
 import * as Immer from "immer";
 import * as React from "react";
 
-import * as Universal from "@eden/universal";
+import * as Universal from "@taygo/universal";
 
-import * as Primitives from "@eden/abstract/primitives";
+import * as Primitives from "@taygo/abstract/primitives";
 
-import * as TS from "@eden/abstract/ts";
-import * as Utils from "@eden/abstract/utils";
+import * as TS from "@taygo/abstract/ts";
+import * as Utils from "@taygo/abstract/utils";
 
 export abstract class Sensor<
 	TProps extends Sensor.Props<TContext>,

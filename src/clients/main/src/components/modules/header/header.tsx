@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import * as Abstract from "@eden/abstract";
+import * as Abstract from "@taygo/abstract";
 
 import * as Constants from "./header.constants";
 

@@ -2,11 +2,11 @@ import * as Immer from "immer";
 import * as React from "react";
 import { shouldPolyfill } from "@formatjs/intl-getcanonicallocales/should-polyfill";
 
-import * as Protocol from "@eden/protocol";
-import * as Universal from "@eden/universal";
+import * as Protocol from "@taygo/protocol";
+import * as Universal from "@taygo/universal";
 
-import * as TS from "@eden/sensors/ts";
-import * as Utils from "@eden/sensors/utils";
+import * as TS from "@taygo/sensors/ts";
+import * as Utils from "@taygo/sensors/utils";
 
 import * as Constants from "./locale.constants";
 import * as Errors from "./locale.errors";

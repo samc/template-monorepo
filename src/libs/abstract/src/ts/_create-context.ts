@@ -1,4 +1,4 @@
-import * as TS from "@eden/abstract/ts";
+import * as TS from "@taygo/abstract/ts";
 
 import { InferContextFromComponent } from ".";
 

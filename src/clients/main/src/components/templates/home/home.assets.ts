@@ -1,1 +1,1 @@
-export {} from "@eden/client.main/assets";
+export {} from "@taygo/client.main/assets";

@@ -1,7 +1,7 @@
 import * as React from "react";
 
-import * as TS from "@eden/abstract/ts";
-import * as Utils from "@eden/abstract/utils";
+import * as TS from "@taygo/abstract/ts";
+import * as Utils from "@taygo/abstract/utils";
 
 export abstract class PureComponent<
 	TProps = {},

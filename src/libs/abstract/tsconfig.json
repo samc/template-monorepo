@@ -1,10 +1,10 @@
 {
-  "extends": "@eden/config/tsconfig/tsconfig.lib.json",
+  "extends": "@taygo/config/tsconfig/tsconfig.lib.json",
   "compilerOptions": {
     "composite": true,
     "baseUrl": "./src",
     "paths": {
-      "@eden/abstract/*": ["./*", "./lib/*"]
+      "@taygo/abstract/*": ["./*", "./lib/*"]
     }
   },
   "include": ["overrides.d.ts", "**/*.ts", "**/*.tsx"],

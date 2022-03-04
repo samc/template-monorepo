@@ -1,4 +1,4 @@
-import * as Api from "@eden/client.main/api";
+import * as Api from "@taygo/client.main/api";
 
 export interface StaticProps {
 	props: {

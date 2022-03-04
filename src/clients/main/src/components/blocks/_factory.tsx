@@ -1,7 +1,7 @@
 import React from "react";
 
-import * as Api from "@eden/client.main/api";
-import * as Elements from "@eden/client.main/elements";
+import * as Api from "@taygo/client.main/api";
+import * as Elements from "@taygo/client.main/elements";
 
 const defaultProps = Object.freeze<Factory.Props>({});
 

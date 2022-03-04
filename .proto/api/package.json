@@ -1,5 +1,5 @@
 {
-  "name": "@eden/proto.api",
+  "name": "@taygo/proto.api",
   "version": "0.0.0",
   "private": true,
   "files": [
@@ -13,7 +13,7 @@
     "update:publish": "buf push"
   },
   "dependencies": {
-    "@eden/proto.db": "^0.0.0"
+    "@taygo/proto.db": "^0.0.0"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.5",

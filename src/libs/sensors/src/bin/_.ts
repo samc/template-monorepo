@@ -1,1 +1,1 @@
-export { compose } from "@eden/universal";
+export { compose } from "@taygo/universal";
