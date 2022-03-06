@@ -5,7 +5,7 @@ import Conf from "conf";
 import "zx/globals";
 
 // ⌜                     ⌝
-//   [[eden.service]]
+//   [[invoke.service]]
 //
 //   Available commands:
 //   - run
@@ -22,7 +22,7 @@ export function service(config) {
 		"Run service level operations",
 	);
 
-	// eden.service.run
+	// [[invoke.service.run]]
 	service
 		.command("run [commands...]")
 		.option("-s, --scope <service>", "service to run")

@@ -5,11 +5,10 @@ import Conf from "conf";
 import "zx/globals";
 
 // ⌜                     ⌝
-//   [[eden.init]]
+//   [[invoke.init]]
 //
 //   Available commands:
 //   - git
-//   - tree
 // ⌞                     ⌟
 
 /**
@@ -23,7 +22,7 @@ export function init(config) {
 		"Bootstrap the project environment",
 	);
 
-	// eden.init.git
+	// [[invoke.init.git]]
 	init
 		.command("git")
 		.description("Initialize all `git` scope modifications")
@@ -31,11 +30,6 @@ export function init(config) {
 			$`git flow init`;
 			$`git config gitflow.path.hooks .husky`;
 		});
-
-	// eden.init.tree
-	init.command("coffee").action(() => {
-		console.log("brew coffee");
-	});
 
 	init.hook("postAction", () => {
 		config.set({ init: true });

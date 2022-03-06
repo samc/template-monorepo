@@ -5,7 +5,7 @@ import Conf from "conf";
 import "zx/globals";
 
 // ⌜              ⌝
-//   [[eden.code]]
+//   [[invoke.code]]
 // ⌞              ⌟
 
 /**

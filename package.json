@@ -72,5 +72,8 @@
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "packageManager": "npm@7.18.1"
+  "packageManager": "npm@7.18.1",
+  "dependencies": {
+    "yaml": "2.0.0-10"
+  }
 }

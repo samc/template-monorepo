@@ -19,10 +19,10 @@ config.set(
 );
 
 const program = new Commander.Command();
-program.name("eden").description("Eden CLI").version(Constants.VERSION);
+program.name("invoke").description("Eden CLI").version(Constants.VERSION);
 
 // ⌜                   ⌝
-//   [[eden.clean]]
+//   [[invoke.clean]]
 //
 //   Available options:
 //   - --all
@@ -30,17 +30,26 @@ program.name("eden").description("Eden CLI").version(Constants.VERSION);
 program.addCommand(Commands.clean(config));
 
 // ⌜              ⌝
-//   [[eden.code]]
+//   [[invoke.code]]
 // ⌞              ⌟
 program.addCommand(Commands.code(config));
 
 // ⌜             ⌝
-//   [[eden.dev]]
+//   [[invoke.dev]]
 // ⌞             ⌟
 program.addCommand(Commands.dev(config));
 
 // ⌜                     ⌝
-//   [[eden.init]]
+//   [[invoke.generate]]
+//
+//   Available commands:
+//   - config
+//   - linters
+// ⌞                     ⌟
+program.addCommand(Commands.generate(config));
+
+// ⌜                     ⌝
+//   [[invoke.init]]
 //
 //   Available commands:
 //   - git
@@ -49,7 +58,7 @@ program.addCommand(Commands.dev(config));
 program.addCommand(Commands.init(config));
 
 // ⌜                        ⌝
-//   [[eden.lint]]
+//   [[invoke.lint]]
 //
 //   Available options:
 //   - --all
@@ -58,8 +67,13 @@ program.addCommand(Commands.init(config));
 // ⌞                        ⌟
 program.addCommand(Commands.lint(config));
 
+// ⌜                   ⌝
+//   [[invoke.refresh]]
+// ⌞                   ⌟
+program.addCommand(Commands.refresh(config));
+
 // ⌜                        ⌝
-//   [[eden.service]]
+//   [[invoke.service]]
 //
 //   Available options:
 //   - --all
