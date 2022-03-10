@@ -69,6 +69,10 @@
       "path": "../src/libs/utils"
     },
     {
+      "name": "💠 @taygo/proto.asdf",
+      "path": "../.proto/asdf"
+    },
+    {
       "name": "💠 @taygo/proto.contact",
       "path": "../.proto/contact"
     },
@@ -93,8 +97,16 @@
       "path": "../.k8s/charts/gateway"
     },
     {
+      "name": "📚 @taygo/templates.buf",
+      "path": "../.templates/lib/buf"
+    },
+    {
       "name": "📚 @taygo/templates.component",
       "path": "../.templates/lib/component"
+    },
+    {
+      "name": "📚 @taygo/templates.function",
+      "path": "../.templates/lib/function"
     },
     {
       "name": "📚 @taygo/template.generator",
@@ -107,7 +119,7 @@
     {
       "name": "📚 @taygo/template.service",
       "path": "../.templates/lib/service"
-    }
+    },
   ],
   "settings": {
     "autoBarrel.disableRecursiveBarrelling": true,

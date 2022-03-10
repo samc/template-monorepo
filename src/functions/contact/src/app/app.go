@@ -32,11 +32,5 @@ func (app *App) Init(ctx context.Context) (err error) {
     return err
   }
 
-  defer func() {
-    if err := app.db.Prisma.Disconnect(); err != nil {
-      panic(err)
-    }
-  }()
-
 	return nil
 }

@@ -45,6 +45,7 @@
     "update": "turbo run update",
     "update:project": "ncu --upgrade --packageFile package.json; npm install",
     "update:clients": "npm run update -- --scope=@taygo/client.*",
+    "update:gateway": "npm run update -- --scope=@taygo/gateway.*",
     "update:libs": "npm run update -- --ignore=@taygo/client.* --ignore=@taygo/proto.* --ignore=@taygo/template.*",
     "update:proto": "npm run update -- --scope=@taygo/proto.*",
     "update:functions": "npm run update -- --scope=@taygo/function.*",
@@ -67,7 +68,7 @@
     "npm-check-updates": "^12.5.2",
     "npm-run-all": "^4.1.5",
     "semantic-release": "^19.0.2",
-    "serverless": "^3.7.3",
+    "serverless": "^3.7.4",
     "serverless-offline": "^8.5.0",
     "turbo": "latest"
   },

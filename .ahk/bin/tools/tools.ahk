@@ -80,6 +80,27 @@ SetupTools({
           ]
         }
       ]
+    },
+    {
+      Name: "Deployment",
+      Profile: Profiles.Work,
+      Position: Positions.Left,
+      Groups: [
+        {
+          Name: "AWS",
+          Color: Chrome.Page.TabGroupColors.Yellow,
+          Urls: [
+            "https://us-east-1.console.aws.amazon.com/console/home"
+          ]
+        },
+        {
+          Name: "Serverless",
+          Color: Chrome.Page.TabGroupColors.Red,
+          Urls: [
+            "https://app.serverless.com/samcraigdev"
+          ]
+        },
+      ]
     }
   ]
 })

@@ -3,6 +3,7 @@ package app
 import (
 	"context"
 	"net/http"
+	"strconv"
 
 	"github.com/99designs/gqlgen/graphql/handler"
 	"github.com/99designs/gqlgen/graphql/handler/debug"
@@ -22,12 +23,11 @@ func (app *App) InitGraphQL(ctx context.Context) (err error) {
 	server := handler.NewDefaultServer(generated.NewExecutableSchema(generated.Config{Resolvers: resolvers}))
 	server.Use(&debug.Tracer{})
 
-	http.Handle("/query", server)
+	http.Handle("/", server)
 
-  port := app.config.Get("port").String("4000")
-
+  port := app.config.Get("port").Int(5000)
   logger.Infof("GraphQL server listening on port %d", port)
-  err = http.ListenAndServe(":"+port, nil)
+  err = http.ListenAndServe(":"+strconv.Itoa(port), nil)
   if err != nil {
     return err
   }

@@ -1,4 +1,432 @@
 {
-	"port": 5000,
-	"stage": "development"
+  "port": 5000,
+  "stage": "development",
+  "shell": "/nix/store/07j81a5xy8j1srvf57dl7lxsaihnmfac-bash-5.1-p12/bin/bash",
+  "npm": {
+    "command": "run-script",
+    "config": {
+      "userconfig": "/home/sam/.npmrc",
+      "cache": "/home/sam/.npm",
+      "local": {
+        "prefix": "/home/sam/builds/growthat/template-taygo"
+      },
+      "globalconfig": "/home/sam/.npm/etc/npmrc",
+      "init": {
+        "module": "/home/sam/.npm-init.js"
+      },
+      "prefix": "/home/sam/.npm",
+      "user": {
+        "agent": "npm/8.5.0 node/v16.4.0 linux x64 workspaces/true"
+      },
+      "noproxy": "",
+      "metrics": {
+        "registry": "https://registry.npmjs.org/"
+      },
+      "node": {
+        "gyp": "/home/sam/builds/growthat/template-taygo/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js"
+      },
+      "global": {
+        "prefix": "/home/sam/.npm"
+      }
+    },
+    "root": "/home/sam/.npm",
+    "bin": "/home/sam/.npm/bin",
+    "package": {
+      "version": "0.0.0",
+      "name": "@taygo/gateway.graphql",
+      "json": "/home/sam/builds/growthat/template-taygo/src/gateways/graphql/package.json"
+    },
+    "lifecycle": {
+      "script": "nodemon ./server.js",
+      "event": "_dev"
+    },
+    "execpath": "/home/sam/builds/growthat/template-taygo/node_modules/npm/bin/npm-cli.js",
+    "node": {
+      "execpath": "/nix/store/8ar86gc2f7l38kz0y9nj45mbjailkymd-nodejs-16.4.0/bin/node"
+    }
+  },
+  "allowsubstitutes": "",
+  "zplug": {
+    "root": "/nix/store/nv7i5k1whb2vfpn4jys6acs4j6z87w6g-zplug-2.4.2",
+    "cache": {
+      "dir": "/home/sam/.zplug/cache"
+    },
+    "threads": "16",
+    "filter": "fzf-tmux:fzf:peco:percol:fzy:zaw",
+    "bin": "/home/sam/.zplug/bin",
+    "protocol": "HTTPS",
+    "use": {
+      "cache": "true"
+    },
+    "home": "/home/sam/.zplug",
+    "repos": "/home/sam/.zplug/repos",
+    "loadfile": "/home/sam/.zplug/packages.zsh",
+    "error": {
+      "log": "/home/sam/.zplug/.error_log"
+    }
+  },
+  "metadata": {
+    "version": "0.0.0",
+    "organization": "samc",
+    "owner": "Sam Craig",
+    "nixpkgs": {
+      "channel": "nixpkgs-unstable"
+    },
+    "repository": "https://github.com/samc/taygo",
+    "name": "taygo"
+  },
+  "": {
+    "": "/home/sam/builds/growthat/template-taygo/node_modules/.bin/nodemon",
+    "zplug": {
+      "version": "2.4.2",
+      "prezto": "sorin-ionescu/prezto",
+      "awkpath": "/nix/store/nv7i5k1whb2vfpn4jys6acs4j6z87w6g-zplug-2.4.2/misc/contrib",
+      "url": "https://github.com/zplug/zplug",
+      "ohmyzsh": "robbyrussell/oh-my-zsh",
+      "config": {
+        "subshell": ":"
+      }
+    },
+    "p9k": {
+      "tty": "/dev/pts/15"
+    },
+    "enhancd": {
+      "version": "2.2.4"
+    }
+  },
+  "entity": {
+    "client": {
+      "contact": {
+        "host": "localhost",
+        "port": "3000",
+        "url": "http://localhost:3000"
+      }
+    },
+    "gateway": {
+      "graphql": {
+        "url": "http://localhost:4000",
+        "host": "localhost",
+        "port": "4000"
+      }
+    },
+    "function": {
+      "contact": {
+        "url": "http://localhost:5000",
+        "port": "5000",
+        "host": "localhost"
+      }
+    }
+  },
+  "nix": {
+    "build": {
+      "cores": "4",
+      "top": "/build"
+    },
+    "profiles": "/nix/var/nix/profiles/default /home/sam/.nix-profile",
+    "enforce": {
+      "no": {
+        "native": "1"
+      }
+    },
+    "path": ":/home/sam/.nix-defexpr/channels:/home/sam/.nix-defexpr/channels",
+    "bintools": {
+      "wrapper": {
+        "target": {
+          "host": {
+            "x86": {
+              "64": {
+                "unknown": {
+                  "linux": {
+                    "gnu": "1"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "ssl": {
+      "cert": {
+        "file": "/etc/ssl/certs/ca-certificates.crt"
+      }
+    },
+    "store": "/nix/store",
+    "log": {
+      "fd": "2"
+    },
+    "cflags": {
+      "compile": " -frandom-seed=mdgbiq7vjw -isystem /nix/store/8ar86gc2f7l38kz0y9nj45mbjailkymd-nodejs-16.4.0/include -isystem /nix/store/alqzlxbrjsg9nrjm3dxhviyh3idr1bvc-python-2.7.18/include -isystem /nix/store/8ar86gc2f7l38kz0y9nj45mbjailkymd-nodejs-16.4.0/include -isystem /nix/store/alqzlxbrjsg9nrjm3dxhviyh3idr1bvc-python-2.7.18/include"
+    },
+    "cc": {
+      "wrapper": {
+        "target": {
+          "host": {
+            "x86": {
+              "64": {
+                "unknown": {
+                  "linux": {
+                    "gnu": "1"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "indent": {
+      "make": "1"
+    },
+    "hardening": {
+      "enable": "fortify stackprotector pic strictoverflow format relro bindnow"
+    },
+    "ldflags": "-rpath /nix/store/mdgbiq7vjwi58biaw1k3pb7348rwqa56-lorri-keep-env-hack-eden/lib64 -rpath /nix/store/mdgbiq7vjwi58biaw1k3pb7348rwqa56-lorri-keep-env-hack-eden/lib  -L/nix/store/alqzlxbrjsg9nrjm3dxhviyh3idr1bvc-python-2.7.18/lib -L/nix/store/alqzlxbrjsg9nrjm3dxhviyh3idr1bvc-python-2.7.18/lib"
+  },
+  "origextraclosure": "",
+  "configureflags": "",
+  "origargs": "-e /nix/store/9krlzvny65gdc8s7kpb6lkx8cd02c25b-default-builder.sh",
+  "wsl": {
+    "distro": {
+      "name": "Ubuntu-20.04"
+    },
+    "interop": "/run/WSL/2559_interop"
+  },
+  "pythonnousersite": "1",
+  "env": "/nix/store/ha38g3sy0f5fpa64jpsg9mhjhsybng30-eden",
+  "depshosthost": "",
+  "fpath": "/home/sam/.zplug/repos/spwhitt/nix-zsh-completions:/nix/store/nv7i5k1whb2vfpn4jys6acs4j6z87w6g-zplug-2.4.2/autoload:/nix/store/nv7i5k1whb2vfpn4jys6acs4j6z87w6g-zplug-2.4.2/misc/completions:/nix/store/nv7i5k1whb2vfpn4jys6acs4j6z87w6g-zplug-2.4.2/base/sources:/nix/store/nv7i5k1whb2vfpn4jys6acs4j6z87w6g-zplug-2.4.2/base/utils:/nix/store/nv7i5k1whb2vfpn4jys6acs4j6z87w6g-zplug-2.4.2/base/job:/nix/store/nv7i5k1whb2vfpn4jys6acs4j6z87w6g-zplug-2.4.2/base/log:/nix/store/nv7i5k1whb2vfpn4jys6acs4j6z87w6g-zplug-2.4.2/base/io:/nix/store/nv7i5k1whb2vfpn4jys6acs4j6z87w6g-zplug-2.4.2/base/core:/nix/store/nv7i5k1whb2vfpn4jys6acs4j6z87w6g-zplug-2.4.2/base/base:/nix/store/nv7i5k1whb2vfpn4jys6acs4j6z87w6g-zplug-2.4.2/autoload/commands:/nix/store/nv7i5k1whb2vfpn4jys6acs4j6z87w6g-zplug-2.4.2/autoload/options:/nix/store/nv7i5k1whb2vfpn4jys6acs4j6z87w6g-zplug-2.4.2/autoload/tags:/nix/store/pfk6bllfmp7k939wwd6l3iycb500mvz2-zsh-5.8/share/zsh/5.8/functions:/home/sam/.zplug/repos/zsh-users/zsh-completions/src",
+  "node": {
+    "path": "/nix/store/8ar86gc2f7l38kz0y9nj45mbjailkymd-nodejs-16.4.0/lib/node_modules"
+  },
+  "workspace": {
+    "libraries": {
+      "sensors": "src/libs/sensors",
+      "protocol": "src/libs/protocol",
+      "abstract": "src/libs/abstract",
+      "types": "src/libs/types",
+      "universal": "src/libs/universal",
+      "theme": "src/libs/theme",
+      "utils": "src/libs/utils",
+      "primitives": "src/libs/primitives"
+    },
+    "protos": {
+      "account": ".proto/account",
+      "db": ".proto/db",
+      "api": ".proto/api"
+    },
+    "clients": {
+      "contact": "src/clients/contact"
+    },
+    "functions": {
+      "contact": "src/functions/contact"
+    }
+  },
+  "pythonhashseed": "0",
+  "enhancd": {
+    "hyphen": {
+      "arg": "-",
+      "num": "10"
+    },
+    "disable": {
+      "home": "0",
+      "hyphen": "0",
+      "dot": "0"
+    },
+    "completion": {
+      "default": "expand-or-complete",
+      "keybind": "^I",
+      "behavior": "default"
+    },
+    "command": "cd",
+    "dir": "/home/sam/.enhancd",
+    "dot": {
+      "arg": ".."
+    },
+    "root": "/home/sam/.zplug/repos/b4b4r07/enhancd",
+    "use": {
+      "fuzzy": {
+        "match": "1"
+      }
+    },
+    "filter": "fzy:fzf-tmux:fzf:peco:percol:gof:pick:icepick:sentaku:selecta",
+    "home": {
+      "arg": ""
+    }
+  },
+  "ssh": {
+    "auth": {
+      "sock": "/tmp/ssh-XXXXXXec0w65/agent.1066"
+    },
+    "agent": {
+      "pid": "1071"
+    },
+    "dir": "/home/sam/.ssh"
+  },
+  "direnv": {
+    "dir": "-/home/sam/builds/growthat/template-taygo",
+    "diff": "eJzseltv2zqz9l8R9H13b2TrfAiwLxxbTdQ4tivbSVoUMCjqRImiZFLW6cX73zckO02cpAur6drY-6ILWKk0nGc45IjDZ0j_my_4y3_zq8nmhr_kxwQ1Y1bmNBiTykBaKtWxJ1dhQdSkZTqATE30zjRqPRK6Ah8iQR6pI3nsIXI5jvMsGDOQjUcENUJB8xDh4HUTziHAR-GB0fHxlb16__H63DA8HF9_yCKQBewl7iRgBBRHrYyUYzh-cBaz5cP61et43bIyyBT5Sb5lAWVjmJMSjCdFMQMlGM8HuyuaRxRkbHyHIM1ZHpbc_Zqb5v6b4Q2TMqZBkbNxCEHmHdgYEIbqAJRxQF-qQkCj_M3MFdlr0Q89_j8XPOmDNXH5Sx5Q_oKfrPsnxl_w0yl_yUcQ9o_LxSfnere-sefz85iKRmJKQGtaM5EYrULN8LGBGwZQTLIQQMEDLBa0kSQU0hDUcS_oTT4-9ub_9S_-gp_ZG9u9cxbOeuNMd1dbZz7jL3mpb3Fce3G_mzm9f8LzELwDwj4bRzSvyxiU4zLICgzKQChBG-XPwPnyevdp6d5NNvwl_yx-mGymN3Y_0uBzy9KtMJe7yZfGE-bdHt8w1H1uqXLz5SDgeG6bu3LlEDT7vN5Whd-ac3l7WH_7sjRc9UbtHqvKEpaV4GjYJuzKbk372g3zMiHyNfRs3H2Oo-18fvtwG8_rx10yqe9pALeNrZmqYdxN1cxiuSKVm8e1YW4eFeXu8BA0c_mQhEZ0baG4rr8Uam2HbpdX27vr6SKsb_az-wha17cPpevKWyfIaqDVSkP8mQfctZgy6_bKdx6yoKaeNEO-mz98sZT02xdFTGpX_6ZMP9fNzc0t0fFjZlFZ3kpXwm77LU5oCgTtvvRud-Lnm3s9Xd3PHuTlt9Iviwd55uDtp8-36HO3ns2UdZ0d7pduWyiTXbCo9G93YD_5ChwKo_am-VS39pIurxay_OjKW11zKVl_hdvb8vphU4m0M-NNs0nUsNDB3SaIV4m2qieT3W73FezmW_6CtxcbZ_N1N5079mKzmy4Xm8l0s7tZrvtYDqszzln5U8XV0u0VFVEUf6qzdfvPOS7L4nI8_mHy8hzzabuYbpzl4m-48Eb15IT21wZ_4sY56nqysR8mX3fX7mR182X-F1681jw5of6luZ_4cAJdL5_S-d9cguORj2hAqvGwGntfd283hESNjDBm1h6K0AIEGto-EaFFVFJVLVOZAGomyKJkjUR9JJnHNPYMrzNLC6WKFl0i-aEq-TQrmrDGMdV1MyNQiFAZ4rwWpJEkj5TX8JQRU2pq1IaeJYdepXoSDSvTR4alWB0ShSjvkcZIf41sNRUYpMKSxjpqEM8zoJTpZsLqxMTKPhTiAGeCMjJH4mtoVCnEaFIVFQmxrNRINZ82RVdYWaRGba0IBDVFGjEhzEpBGslvLZiAmnoE5dDAipl2YmuRRNUyLwEIp23mCyT3g4QJkj5S36INn3kE6jD1kaVLVdp0qKZVikXPkmCsa0LRlnFOlJElFHlQ0rafgpEkv7YD8L7DjUcTFlmEJpniN3GF2lhBPpW8Cp7sCPLIeCdykEBN8g0kSlFRSK1lxK3ZNJYPIlkWK5IKLAVhmGNfkEaKNnrTu2eKpicWkW5oYV3rlh5pUMOmEUvUlKDSCjCnwaFEmAnW2znQVa1SNFXD0GsMo94biqbRyKeRFxOtbgwhRMQ_otX3YlhEWZNB4Es6aNKowIoZZnLXxUDWqJ_ua8FHYXjEK6M3YydFAxJ_rxEoq2rWxaEmUxGptdgSr6BYESJyYIHfd_1m2CDcU13V9dhXqJgmoYX3SZoZhgcoMhWrh0Y0KARlZLwJvNiAtOt8oKXSHmgkE30tIp3apYqZmZUoRKBO-416JL2GZrhVAUxxlIVGSHAFM9jVai2mKWxVrZb6bktA-1ipr7FaqJqiKCKiaCSOC6tJQrPK_I7tDcSoXwlRh4r-G3vTa1ynlYWgiDoaq6TWOk0N_TQrPFWTlRRhwetQIQvSSBzpI3EkCwO5OLehGrIHNN2TErGzUi1qIoohMbNYMqCEQNh7noE0ENS36eGXmc1ZboFFxCqKitRrCUxMC9XxPqqqVqlgZdaGUIASxsPqeJNdkkSUlbohcQxkxTNRWrSRagK5ULC49wxNaDpBG8kj7WnE_AXvLJw-xZf0EAxvu_nSdZ1nwvZ3szaLA4x7sn20snAef9hAWXGgvfWBnGGfv-Dv7M1kNtlMdovJnd13fyJfz3LncXV7vd5NbyaLhd1beUpvB8JK4OHgpfbSvZ4snG-Tfm_kL3kGMnjW_LCwexq4Bhk3pQBFLxtde7VcO5ul-_W0i7HL8ThCZXzwRjDP-rHD8Rv_7m13fexMHImjfqPrR3zlLDbL5Xx9vlnhTis8tbU6w8JQ1wDzGz0Ra4RgphSSvO-jcVz0NQVFEVBBHnLXK6O7B3eyWtnubjNxr-0jmdg1pr7T1d2BpCSvyQ4jcmh2ETmcWPCA71nxbrp0B9qqnkk3y1Xv6xDbU8NA3l9-kJ7SKMQIdZkxmmWVGrYmiws1s2AIEmwKEYQ_HJfEkfJjNqbTj7o8_TSf9MFf3q2cef99cEJIAfHzTGBB4P9X5kce2htVUnMCYkPpxH18o0ME4oMfvGvqF3ervzL1v-7VaXLtxaelO7V3i-VuMdk49_aLib-ZuDN74Syud_ZicjVMfZjTEoUtx0oA04LmZQDLnHIFghwrKYJlXgW0J0tcmNMMlBwNMM05DxGf5PXJrrOY9ez5bnL7srf5bIhzX6DRApTxyyE-hxhppodALaVK4RmKatJ6DzRdwDmlSEiDoBACUgkxgKkQ-AEZY-TpKvcPW-Q4Yf7xAPQGfhP_NGV9Wdqn0afssN4sXftsxfYNd33CzPqn5cx-hz__4reIkTfuJbss9w846Gv85dXn6XLV58zcS2BetEfZbHu3Osr8Q1bwF_wvs_8yzzG7_Nv6L90aj86PK_52ofGWp1mGtN8DRYwykhiJVWf7VjRIDC3m-3J73IQDHAriSHqHAXwgZ76hP2lDcQw9GvpJq8ZiokkdlPZq7EchqZk3mHgfWjOgWLIitSihSNsTmepele1rk0Wa1kmyEGHkwX6TUQRJNN-jP79Hkz-64b0pFRJDNSQlNdumSbGlgWiv-fsCsiZVGYzRs5338X-qxD9V4p8q8U-V-KdK_K0q8fLPTcz_5ZuYC371dXOzXNxM1jdr2-7JofhDuFhu132punni3UfxW0b464x0fJTII2PMUBkIBYApiAZy6E4Wc-eKv-QpIEfu6tqTmT3_1IsC4Ac45C_4te3e2-7cXq93k-m0_-fW7gnl5HYizatkeruo99r1vXSlRdPH60f3Ruo-KQfp27erjbfH93a7TZxlb8f51o-Ooa7nvuvltq9uZpONvbNXy2k_TkXSNEU2hwPp9WZy3av7QRXgvMgCUg5S11kMpUhf1JCInWSrk6Snsscq_Ho5nyyuXxwAHPfwH-094_68ftk-bJT8Bf-wdG_Xq8nUPl0mrJ-O8fs-KBxDjAJSnr41WJ4hnk7-X2PCA4Elysn7qLlz5U5cx17vJlfrjfsMw8hjY-Cxkv4csnKdO6evD9cvQQVFGSpRNcT5fdhys5wu5-egvMxhjn8CWduL9dI964YFhOX0Z31sbuzh2OiHehkHWfAz5a-r8yGUbfFT77cLp4_c5Mz9A0FVQBn4mf_bjTM_62HYnM-Uh1kZvvPldtFHYTTMyRhAmB9I-a7uynmhV6D3dGZXzyp-v84eZ9e74YBq5rivjqF-uahhMRiqSYBxXq8PHitReSgDdrwQHYorhxSHkv3W3Qz3ccbNfYhtcx9j2txvseyPHwRx_wC7_vjZEfcbrPrpI1nFgAX8JR_AOOe-88Jv_Ped574fRFEJjn__f34ov5OTXe5h4i6cxfUlV8YBFzSIlQGBAZeHXBkjxg3nQYhxJC-56AAoIGUQ-KO_NOmUPQIQDpEyoARgDmUFDvpNA_Rpl_ODEiDMhTnl-oCPsnQ9HIR_5znu53b_h6bghZg7yv8f5wYwpz4HMOaGYHBoWLIcYBw9kBJlAecHRUD8gEAUsO8kaIqclu8Ze4pnQM8XfAxrmYQdztI4S1Vaw7ajnrEnmhiKfgWb08HaqTthOOB5-YMOmJMQRQcafMIgOmUXPyjYVd_Z8Oc92YrmBYhAGbxu3QAaBeW7wvcwNzkr-__fSt7TPtp53cVL6RtUPo0DmD69OISVAOMXsoBUr-YTKGaksFYMtbAAupoULLKyOIlZ65FIEYdDyR7YlBRMcc4ONHj125oqraVMk_aK6lNd7TRkGn5rWYCocZi10Yv61RwpZ-lBMTxgqqKqqXpd4MSENNVbq04aTVQKhWkCKEs68Hv1LDkAta0lVu33qeqbOK4RIVZTmKrRdVYUZuBYzqgjVSjks8TtE9FPanGvWkUhh6TQK4UZWWqYla6wGkEBQCzII-U8E_pdizLmp1a7Nxo9klVqWKiIlMoDuG1bScDIQz6RB6T0EhkWlHWxJZksIWHTNBBjZlXY8hvitbXMzhwVMkC43_zUX-KR5EMJQDlukhBrFq1YolpVFVVYIljSWe_2gaAjBxXEkTWSzobNPA-FTG5TKGqI1EzWZVGJxaaGwCehiJ-P9mRB7TkpAVkw_Nbj_aPtQaNnc1dnuzl_wecURRM6LEcheOmClVLcVaTVtciHJjPSwtNx2pjQF2Uoa57gByE44FI45YrRsMZ7c1fvJY8P_wyst2ifr4CTdHkoT-PID-VJdip4Tm_HGo-_5I93UcJwB9W3Hcpz7z58Z3A0dubGkV6dprfo98T--cUOecEXNLjJ81NeKGgQBnQoNZ-SoDSIn_LLm5g9Ny3eD-pwSfsPzf9g69lbVvpvElkV-yFFXVJ5aqGZdYp8bMYZ0SJSWJ3XVMIR9GP6j_dJs6B4cvfdMP3nP_8dAAD__2Ig9ko=",
+    "log": {
+      "format": ""
+    },
+    "watches": "eJyskU-L2zAQxb-LzqlHsizJyr3HQu-lhLE8_tPIniDJSUvpdy8L2UuSZQO7R4H4zXvv9-Ov-I5lEnsBEy8EGRfotjn2GcbElzJhgULLKWKhLwX_jAwVrecUxE58477MC4m9so31tTXS78TX33MuWexL2ujf7gG9ihwwQp4wEfRzovUMGCNfwHqDVgc9GKWtRR2UIemwa5w3xndDbaRS0ks9KBdIWmewrb1DidRoWQ93kZQ30jwR6Z3CJwxHHKn6lXm9r22U1B-_UZhjrka-5VtbK_0JHV6kPVDW2OZtdtpW2DIlUFJKiJzSDD3SwmuVORyp3A_eNv6ZMaqAYaIrcgyHxFwyEOrOBN22XR2U65RrnSYcUKtGWTv0rz8hTxTj4fp6aMTehPj5PwAA___Ya_LU"
+  },
+  "p9k": {
+    "tty": "old",
+    "ssh": "0"
+  },
+  "strings": "strings",
+  "depstargettarget": "",
+  "stdenv": "/nix/store/vhdfrizjvb4p58wkidl8hmn5gnp9zbxv-stdenv-linux",
+  "color": "0",
+  "locale": {
+    "archive": {
+      "2": {
+        "27": "/nix/store/fjnvfdx15sx9z794fl9x7112hsflq742-glibc-locales-2.33-47/lib/locale/locale-archive"
+      }
+    }
+  },
+  "builder": "/nix/store/hcw2nfzlmkhmk4rwcyzrb7qn50f0dvcx-lorri-runtime-tools/bin/bash",
+  "shellhook": "",
+  "editor": "vim",
+  "phases": "buildPhase",
+  "pwd": "/home/sam/builds/growthat/template-taygo/src/gateways/graphql",
+  "source": {
+    "date": {
+      "epoch": "315532800"
+    }
+  },
+  "logname": "sam",
+  "xdg": {
+    "session": {
+      "type": "tty",
+      "class": "user",
+      "id": "c7"
+    },
+    "runtime": {
+      "dir": "/run/user/1000"
+    },
+    "data": {
+      "dirs": "/nix/store/pg971qqa30gmnj7j9wmqy07nhc9sdd2y-patchelf-0.14.3/share"
+    }
+  },
+  "origbuilder": "/nix/store/07j81a5xy8j1srvf57dl7lxsaihnmfac-bash-5.1-p12/bin/bash",
+  "init": {
+    "cwd": "/home/sam/builds/growthat/template-taygo/src/gateways/graphql"
+  },
+  "cxx": "g++",
+  "identities": {
+    "dir": "/home/sam/.identities"
+  },
+  "system": "x86_64-linux",
+  "period": "30",
+  "host": {
+    "path": "/nix/store/j4g7fhs9qc0c9anc75qj0c9n4nvvys4s-aws-2019.06.18/bin:/nix/store/wm95f1vrpzj1df41drmpxfwlhr668mnc-gitflow-1.12.3/bin:/nix/store/ksn81xwiyfb92fbv4b1rfv8di7939zi0-go-1.17.6/bin:/nix/store/y54a7nvl15szr7nbb7c1m68jswj8l3qf-helm-3.8.0/bin:/nix/store/gv3n7xk4ipjn99k7k5drxpzp9mg4gyw3-nixpkgs-fmt-1.2.0/bin:/nix/store/8ar86gc2f7l38kz0y9nj45mbjailkymd-nodejs-16.4.0/bin:/nix/store/7dsbnc6ckdi961vkxziwrvkl0b91ch65-python3.9-poetry-1.1.12/bin:/nix/store/alqzlxbrjsg9nrjm3dxhviyh3idr1bvc-python-2.7.18/bin:/nix/store/cnc51d7i01gpp1y97hy8xx9dag220vnk-skaffold-1.35.2/bin:/nix/store/b808b0pg675fww696g5c5l87h1r81c3y-coreutils-9.0/bin:/nix/store/645v3545lcbx77wq7355rgdrgbhn5wx7-findutils-4.8.0/bin:/nix/store/pgmxmcad16axkgpl38fm2zzha25rdkqw-diffutils-3.8/bin:/nix/store/npxajdq5nc244mzhf52r0i4w0ynbprl3-gnused-4.8/bin:/nix/store/bafqr6466hd3r0kjf9lqjkm77bari839-gnugrep-3.7/bin:/nix/store/70xakzzda5k1qa5nm0d5gnz4zk38m8v0-gawk-5.1.1/bin:/nix/store/mly4acklgmf7fnlvcmczw4w0kkcy45w1-gnutar-1.34/bin:/nix/store/5f48000in35nhhp9xjf8vmdzsq7isrdv-gzip-1.11/bin:/nix/store/hwkv9ic0izrh4nw5z54fdkmpb4523kil-bzip2-1.0.6.0.2-bin/bin:/nix/store/472ba56b1j0z9k5gxgrlcn8mh17c1iaf-gnumake-4.3/bin:/nix/store/07j81a5xy8j1srvf57dl7lxsaihnmfac-bash-5.1-p12/bin:/nix/store/kcpgsvripkbyncj89iwhqgvvy3vcv8w7-patch-2.7.6/bin:/nix/store/jj023wxnhha23b8ikpyg48a2p3l0qb75-xz-5.2.5-bin/bin"
+  },
+  "in": {
+    "nix": {
+      "shell": "impure"
+    },
+    "lorri": {
+      "shell": "/home/sam/builds/growthat/template-taygo/shell.nix"
+    }
+  },
+  "doinstallcheck": "",
+  "home": "/home/sam",
+  "lang": "C.UTF-8",
+  "origpath": "",
+  "tmux": {
+    "tmpdir": "/run/user/1000"
+  },
+  "depstargettargetpropagated": "",
+  "whome": "/mnt/c/Users/conta",
+  "wayland": {
+    "display": "wayland-0"
+  },
+  "outputs": "out",
+  "ld": "ld",
+  "invocation": {
+    "id": "52089242d3dd4a048ac1d3c2fc2eead4"
+  },
+  "buildphase": "echo \"------------------------------------------------------------\" >>$out\necho \" WARNING: the existence of this path is not guaranteed.\" >>$out\necho \" It is an internal implementation detail for pkgs.mkShell.\"   >>$out\necho \"------------------------------------------------------------\" >>$out\necho >> $out\n# Record all build inputs as runtime dependencies\nexport >> $out\n",
+  "readelf": "readelf",
+  "wdir": "/mnt/c",
+  "tools": {
+    "nodejs": {
+      "version": "16.4.0"
+    },
+    "golang": {
+      "version": "1.17.6"
+    }
+  },
+  "docheck": "",
+  "depsbuildbuild": "",
+  "prehook": "",
+  "pythonpath": "/nix/store/alqzlxbrjsg9nrjm3dxhviyh3idr1bvc-python-2.7.18/lib/python2.7/site-packages",
+  "term": "xterm-256color",
+  "size": "size",
+  "propagatednativebuildinputs": "",
+  "zdotdir": "/home/sam/.config/zsh",
+  "strictdeps": "",
+  "extraclosure": "/nix/store/0vkw1m51q34dr64z5i87dy99an4hfmyg-coreutils-8.32 /nix/store/37ba8404546wplj8crk6y9wjx503p3s5-attr-2.4.48 /nix/store/a4yw1svqqk4d8lhwinn9xp847zz9gfma-bash-4.4-p23 /nix/store/dn0djw0q49pp2fnp6v3s7mk78v63swic-acl-2.3.0 /nix/store/dzyimsdk9yq7x6g24r79ipg3vbalyyy1-libidn2-2.3.1 /nix/store/fprszh918sjnfxxxclls9vl9dxnbyw2s-bash-4.4-p23-man /nix/store/hcw2nfzlmkhmk4rwcyzrb7qn50f0dvcx-lorri-runtime-tools /nix/store/i1dc1ac2hxjfl59rvsj49vvgvl1nl16s-libunistring-0.9.10 /nix/store/sbbifs2ykc05inws26203h0xwcadnf0l-glibc-2.32-46",
+  "user": "sam",
+  "wuser": "conta",
+  "serverless": {
+    "access": {
+      "key": "AKA1LvjCKNwq5GV1B5gCXGXRH1zF3u1ZZBTbqlVEyUjIO"
+    }
+  },
+  "ar": "ar",
+  "as": "as",
+  "visual": "vim",
+  "origsystem": "x86_64-linux",
+  "display": ":0",
+  "shlvl": "1",
+  "nm": "nm",
+  "origoutputs": "out",
+  "patches": "",
+  "inside": {
+    "genie": "true"
+  },
+  "buildinputs": "/nix/store/j4g7fhs9qc0c9anc75qj0c9n4nvvys4s-aws-2019.06.18 /nix/store/wm95f1vrpzj1df41drmpxfwlhr668mnc-gitflow-1.12.3 /nix/store/ksn81xwiyfb92fbv4b1rfv8di7939zi0-go-1.17.6 /nix/store/y54a7nvl15szr7nbb7c1m68jswj8l3qf-helm-3.8.0 /nix/store/gv3n7xk4ipjn99k7k5drxpzp9mg4gyw3-nixpkgs-fmt-1.2.0 /nix/store/8ar86gc2f7l38kz0y9nj45mbjailkymd-nodejs-16.4.0 /nix/store/7dsbnc6ckdi961vkxziwrvkl0b91ch65-python3.9-poetry-1.1.12 /nix/store/alqzlxbrjsg9nrjm3dxhviyh3idr1bvc-python-2.7.18 /nix/store/cnc51d7i01gpp1y97hy8xx9dag220vnk-skaffold-1.35.2",
+  "preferlocalbuild": "1",
+  "depsbuildtarget": "",
+  "objcopy": "objcopy",
+  "deterministic": {
+    "build": "1"
+  },
+  "out": "/nix/store/mdgbiq7vjwi58biaw1k3pb7348rwqa56-lorri-keep-env-hack-eden",
+  "wslenv": "WT_SESSION::WT_PROFILE_ID",
+  "strip": "strip",
+  "objdump": "objdump",
+  "path": "/home/sam/builds/growthat/template-taygo/src/gateways/graphql/node_modules/.bin:/home/sam/builds/growthat/template-taygo/src/gateways/node_modules/.bin:/home/sam/builds/growthat/template-taygo/src/node_modules/.bin:/home/sam/builds/growthat/template-taygo/node_modules/.bin:/home/sam/builds/growthat/node_modules/.bin:/home/sam/builds/node_modules/.bin:/home/sam/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/home/sam/builds/growthat/template-taygo/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/home/sam/builds/growthat/template-taygo/src/gateways/graphql/node_modules/.bin:/home/sam/builds/growthat/template-taygo/src/gateways/node_modules/.bin:/home/sam/builds/growthat/template-taygo/src/node_modules/.bin:/home/sam/builds/growthat/template-taygo/node_modules/.bin:/home/sam/builds/growthat/node_modules/.bin:/home/sam/builds/node_modules/.bin:/home/sam/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/home/sam/builds/growthat/template-taygo/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/home/sam/builds/growthat/template-taygo/.tools:/home/sam/builds/growthat/template-taygo/node_modules/.bin:/home/sam/builds/growthat/template-taygo/.direnv/go/bin:/nix/store/pg971qqa30gmnj7j9wmqy07nhc9sdd2y-patchelf-0.14.3/bin:/nix/store/kb3x3n7f62ssrmmv4fy8shp4m9cfajl8-gcc-wrapper-10.3.0/bin:/nix/store/5kxrlhcbrfdjy4h0j51zc1q4hdgfnwsb-gcc-10.3.0/bin:/nix/store/wsa39231yijri5qn2r6bvmqw8sg55z12-glibc-2.33-108-bin/bin:/nix/store/b808b0pg675fww696g5c5l87h1r81c3y-coreutils-9.0/bin:/nix/store/lz5pb4y9z79lc65asdx6j0wiicm3p12q-binutils-wrapper-2.35.2/bin:/nix/store/aj74713k8yxxkl95agq5dqpcsxk4schi-binutils-2.35.2/bin:/nix/store/j4g7fhs9qc0c9anc75qj0c9n4nvvys4s-aws-2019.06.18/bin:/nix/store/wm95f1vrpzj1df41drmpxfwlhr668mnc-gitflow-1.12.3/bin:/nix/store/ksn81xwiyfb92fbv4b1rfv8di7939zi0-go-1.17.6/bin:/nix/store/y54a7nvl15szr7nbb7c1m68jswj8l3qf-helm-3.8.0/bin:/nix/store/gv3n7xk4ipjn99k7k5drxpzp9mg4gyw3-nixpkgs-fmt-1.2.0/bin:/nix/store/8ar86gc2f7l38kz0y9nj45mbjailkymd-nodejs-16.4.0/bin:/nix/store/7dsbnc6ckdi961vkxziwrvkl0b91ch65-python3.9-poetry-1.1.12/bin:/nix/store/alqzlxbrjsg9nrjm3dxhviyh3idr1bvc-python-2.7.18/bin:/nix/store/cnc51d7i01gpp1y97hy8xx9dag220vnk-skaffold-1.35.2/bin:/nix/store/b808b0pg675fww696g5c5l87h1r81c3y-coreutils-9.0/bin:/nix/store/645v3545lcbx77wq7355rgdrgbhn5wx7-findutils-4.8.0/bin:/nix/store/pgmxmcad16axkgpl38fm2zzha25rdkqw-diffutils-3.8/bin:/nix/store/npxajdq5nc244mzhf52r0i4w0ynbprl3-gnused-4.8/bin:/nix/store/bafqr6466hd3r0kjf9lqjkm77bari839-gnugrep-3.7/bin:/nix/store/70xakzzda5k1qa5nm0d5gnz4zk38m8v0-gawk-5.1.1/bin:/nix/store/mly4acklgmf7fnlvcmczw4w0kkcy45w1-gnutar-1.34/bin:/nix/store/5f48000in35nhhp9xjf8vmdzsq7isrdv-gzip-1.11/bin:/nix/store/hwkv9ic0izrh4nw5z54fdkmpb4523kil-bzip2-1.0.6.0.2-bin/bin:/nix/store/472ba56b1j0z9k5gxgrlcn8mh17c1iaf-gnumake-4.3/bin:/nix/store/07j81a5xy8j1srvf57dl7lxsaihnmfac-bash-5.1-p12/bin:/nix/store/kcpgsvripkbyncj89iwhqgvvy3vcv8w7-patch-2.7.6/bin:/nix/store/jj023wxnhha23b8ikpyg48a2p3l0qb75-xz-5.2.5-bin/bin:/nix/store/nv7i5k1whb2vfpn4jys6acs4j6z87w6g-zplug-2.4.2/bin:/home/sam/.nix-profile/bin:/home/sam/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32:/mnt/c/Users/conta/AppData/Local/Programs/Microsoft VS Code/bin:/home/sam/.zplug/repos/fcambus/ansiweather:/home/sam/.cargo/bin:/home/sam/.npm/bin:/home/sam/.cargo/bin",
+  "propagatedbuildinputs": "",
+  "cc": "gcc",
+  "dbus": {
+    "session": {
+      "bus": {
+        "address": "unix:path=/run/user/1000/bus"
+      }
+    }
+  },
+  "depsbuildtargetpropagated": "",
+  "depsbuildbuildpropagated": "",
+  "fzf": {
+    "default": {
+      "opts": "--height 40% --layout=reverse --border --inline-info"
+    }
+  },
+  "mail": "/var/mail/sam",
+  "pulse": {
+    "server": "/mnt/wslg/PulseServer"
+  },
+  "config": {
+    "shell": "/nix/store/07j81a5xy8j1srvf57dl7lxsaihnmfac-bash-5.1-p12/bin/bash"
+  },
+  "ranlib": "ranlib",
+  "oldpwd": "/home/sam",
+  "gopath": "/home/sam/builds/growthat/template-taygo/.direnv/go",
+  "nativebuildinputs": "",
+  "name": "lorri-keep-env-hack-eden",
+  "depshosthostpropagated": ""
 }
