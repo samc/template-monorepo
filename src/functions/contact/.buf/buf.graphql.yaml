@@ -1,0 +1,12 @@
+version: v1
+managed:
+  enabled: true
+  go_package_prefix:
+    default: taygo.contact/api
+    except:
+      - buf.build/googleapis/googleapis
+plugins:
+  - name: graphql
+    out: api
+    opt:
+      - paths=source_relative

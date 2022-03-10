@@ -1,8 +1,0 @@
-{
-  "client": {
-    "target": "components"
-  },
-  "library": {
-    "target": "lib/components"
-  }
-}

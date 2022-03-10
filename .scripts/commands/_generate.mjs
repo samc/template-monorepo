@@ -4,6 +4,8 @@ import * as Commander from "commander";
 import * as FS from "fs";
 import * as Path from "path";
 import Conf from "conf";
+import Enquirer from "enquirer";
+import Inflection from "inflection";
 import "zx/globals";
 
 import * as Utils from "../utils/index.mjs";
@@ -34,9 +36,9 @@ export function generate(config) {
 		.command("config")
 		.description("Generate root level configuration files")
 		.action(async () => {
-      // Generate a dotenv file that mimics the project configuration.
-      await Utils.json2env(config.store, ".env")
-    });
+			// Generate a dotenv file that mimics the project configuration.
+			await Utils.json2env(config.store, ".env");
+		});
 
 	// [[invoke.generate.linters]]
 	generate
@@ -62,6 +64,45 @@ export function generate(config) {
 					);
 				}
 			}
+		});
+
+	// [[invoke.generate.template]]
+	generate
+		.command("template")
+		.description("Generate a new application or component")
+		.action(async () => {
+			const templates = await FS.promises.readdir(
+				Path.resolve(".templates/lib"),
+			);
+
+			const { template } = await Enquirer.prompt({
+				type: "autocomplete",
+				name: "template",
+				message: "What generator do you want to use?",
+				choices: templates.map((template) => ({
+					name: Inflection.humanize(template),
+					value: template,
+				})),
+			});
+
+			const actions = (
+				await FS.promises.readdir(Path.resolve(".templates/lib", template))
+			).filter((entity) =>
+				FS.lstatSync(
+					Path.resolve(".templates/lib", template, entity),
+				).isDirectory(),
+			);
+			const { action } = await Enquirer.prompt({
+				type: "autocomplete",
+				name: "action",
+				message: "What do action do you want to perform?",
+				choices: actions.map((action) => ({
+					name: Inflection.humanize(action),
+					value: action,
+				})),
+			});
+
+			await $`hygen ${template} ${action} --force`;
 		});
 
 	return generate;

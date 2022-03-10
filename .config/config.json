@@ -4,11 +4,11 @@
 	},
 	"init": true,
 	"metadata": {
-		"name": "eden",
+		"name": "taygo",
 		"nixpkgs_channel": "nixpkgs-unstable",
-		"organization": "growthatco",
-		"owner": "GrowThat Digital Agency, LLC.",
-		"repository": "https://github.com/growthatco/eden",
+		"organization": "samc",
+		"owner": "Sam Craig",
+		"repository": "https://github.com/samc/taygo",
 		"version": "0.0.0"
 	},
 	"tools": {
@@ -18,8 +18,7 @@
 	},
 	"workspace": {
 		"clients": {
-			"admin": "src/clients/admin",
-			"main": "src/clients/main"
+			"contact": "src/clients/contact"
 		},
 		"libraries": {
 			"abstract": "src/libs/abstract",
@@ -35,8 +34,8 @@
 			"api": ".proto/api",
 			"account": ".proto/account"
 		},
-		"services": {
-			"account": "src/services/auth"
+		"functions": {
+			"contact": "src/functions/contact"
 		}
 	},
 	"stage": "development"

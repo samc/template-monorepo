@@ -3,16 +3,15 @@
 package tools
 
 import (
-	_ "entgo.io/contrib/entproto/cmd/protoc-gen-ent"        //latest
-	_ "entgo.io/contrib/entproto/cmd/protoc-gen-entgrpc"    //latest
-	_ "entgo.io/ent/cmd/ent"                                //latest
+	_ "github.com/99designs/gqlgen"                         //latest
 	_ "github.com/bufbuild/buf/cmd/buf"                     //v1.0.0-rc8
+	_ "github.com/envoyproxy/protoc-gen-validate"           //latest
+	_ "github.com/go-delve/delve/cmd/dlv"                   //latest
 	_ "github.com/google/gnostic/cmd/protoc-gen-jsonschema" //latest
 	_ "github.com/google/gnostic/cmd/protoc-gen-openapi"    //latest
-	_ "go-micro.dev/v4/cmd/micro"                           //master
-	_ "go-micro.dev/v4/cmd/protoc-gen-micro"                //v4
+	_ "github.com/martinxsliu/protoc-gen-graphql"           //latest
+	_ "github.com/ramya-rao-a/go-outline"                   //latest
 	_ "golang.org/x/tools/gopls"                            //latest
-	_ "google.golang.org/grpc/cmd/protoc-gen-go-grpc"       //latest
-	_ "google.golang.org/protobuf/cmd/protoc-gen-go"        //latest
-	_ "moul.io/protoc-gen-gotemplate"                       //latest
+  _ "google.golang.org/protobuf/cmd/protoc-gen-go"        //latest
+	_ "honnef.co/go/tools/cmd/staticcheck"                  //latest
 )

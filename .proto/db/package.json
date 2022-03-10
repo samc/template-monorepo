@@ -5,7 +5,7 @@
   "files": [
     "buf.lock",
     "buf.yaml",
-    "eden"
+    "taygo"
   ],
   "scripts": {
     "update": "run-s \"update:*\"",

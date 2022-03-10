@@ -1,8 +1,0 @@
-{
-  "client": {
-    "target": "machines"
-  },
-  "library": {
-    "target": "lib/machines"
-  }
-}

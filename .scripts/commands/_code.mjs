@@ -4,9 +4,9 @@ import * as Commander from "commander";
 import Conf from "conf";
 import "zx/globals";
 
-// ⌜              ⌝
+// ⌜                ⌝
 //   [[invoke.code]]
-// ⌞              ⌟
+// ⌞                ⌟
 
 /**
  * Launch the Visual Studio Code workspace
@@ -20,7 +20,7 @@ export function code(config) {
 	);
 
 	code.action(() => {
-		$`code .vscode/eden.code-workspace`;
+		$`code .vscode/taygo.code-workspace`;
 	});
 
 	return code;

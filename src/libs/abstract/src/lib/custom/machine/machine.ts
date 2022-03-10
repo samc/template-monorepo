@@ -57,7 +57,7 @@ export interface Machine<
 	> {}
 
 export namespace Machine {
-	export interface Context extends Machine.DefaultContext {}
+	export type Context = Machine.DefaultContext
 
 	export type States<TContext extends Machine.Context> = XS.Typestate<TContext>;
 
@@ -93,7 +93,7 @@ export namespace Machine {
 
 	// ===[Defaults]===
 
-	export interface DefaultContext extends Record<string, unknown> {
+	export type DefaultContext = {
 		/**
 		 * Current status of the Machine instance
 		 */

@@ -2,16 +2,16 @@
 version: v1
 deps:
   - remote: buf.build
-    owner: eden
-    repository: db
-    branch: main
-    commit: b528595099ee44adb9fecab33a7267b8
-    digest: b1-qvzdCJJcl5c7F7wAvosUEPwHcHPJiNMhAiQMflGOlw4=
-    create_time: 2022-02-24T06:53:49.471713Z
-  - remote: buf.build
     owner: googleapis
     repository: googleapis
     branch: main
-    commit: 846d0973ea9542ba85a83bd51a09c4e8
-    digest: b1-gVRk4WYLf66uxA0F70gxDWnlMHEU84rLDrfz6dOyCqk=
-    create_time: 2022-02-23T15:11:20.915988Z
+    commit: b66d86097dde451b8f9e39add0fa39a4
+    digest: b1-ehnAUToBJhBCYMN5iY0ALF04_NkZBw0n7pXAJ_ykoF4=
+    create_time: 2022-03-05T15:03:39.234468Z
+  - remote: buf.build
+    owner: taygo
+    repository: db
+    branch: main
+    commit: ce2901186aa24466a28ead56a4276da9
+    digest: b1-uUfxB3gMDG8F1AxTWMdVuA5dIgcafUrWqO8Z0K7YSm4=
+    create_time: 2022-03-07T09:26:56.525583Z

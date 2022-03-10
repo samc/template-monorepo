@@ -1,0 +1,35 @@
+{
+  "Create a Node element for a View component": {
+    "prefix": "node",
+    "body": [
+      "// ---[View.${1:Name}]---------------------------------------------------------",
+      "",
+      "View.${1:Name} = (props): JSX.Element => {",
+      "\tconst { children } = props;",
+      "",
+      "\tconst { springs } = Animator.useContext();",
+      "\tconst { data } = Controller.useContext();",
+      "\tconst { sensors } = Observer.useContext();",
+      "",
+      "\treturn (",
+      "\t\t<Styled.${1:Name}.Container style={springs}>{children}</Styled.${1:Name}.Container>",
+      "\t);",
+      "};",
+      "",
+      "View.${1:Name}.displayName = `${View.displayName}.${1:Name}`;"
+    ]
+  },
+  "Create a Leva state relay": {
+    "prefix": "relay leva",
+    "body": [
+      "// ===[${1:component}.${2:key}]===",
+      "React.useEffect(() => {",
+      "  setLeva({ ${2:key}: data.${1:component}.${2:key}.value });",
+      "}, [data.${1:component}.${2:key}.value, setLeva]);",
+      "React.useEffect(() => {",
+      "  data.${1:component}.${2:key}.update(leva.${2:key});",
+      "}, [leva.${2:key}]);",
+      "$3"
+    ],
+  }
+}

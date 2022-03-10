@@ -1,5 +1,5 @@
-import json
 import importlib
+import json
 import os
 import pathlib
 import platform
@@ -9,7 +9,6 @@ import subprocess
 from invoke import task
 from invoke.collection import Collection
 from invoke.config import Config
-
 from scripts import config, fingerprint, linters
 from scripts.lib import file as xfile
 from scripts.lib import string as xstring
@@ -342,9 +341,7 @@ def buf_login(context):
     username = os.environ.get("BUF_USERNAME")
     token = os.environ.get("BUF_TOKEN")
 
-    context.run(
-        f'buf login --username {username} --token-stdin < <(echo "{token}")'
-    )
+    context.run(f'buf login --username {username} --token-stdin < <(echo "{token}")')
 
 
 buf_collection.add_task(buf_login)
@@ -471,9 +468,7 @@ def init_tree(context):
     default_settings_str = xfile.get(default_settings_path)
     default_settings_json = json.loads(default_settings_str)
     default_settings_json["init"] = True
-    default_settings_str = json.dumps(
-        default_settings_json, indent=2, sort_keys=True
-    )
+    default_settings_str = json.dumps(default_settings_json, indent=2, sort_keys=True)
     xfile.overwrite(default_settings_path, default_settings_str)
 
 

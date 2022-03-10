@@ -1,5 +1,5 @@
 version: v1
-name: buf.build/eden/db
+name: buf.build/taygo/db
 deps:
   - buf.build/googleapis/googleapis
 lint:

@@ -1,0 +1,15 @@
+version: v1
+name: buf.build/taygo/contact
+deps:
+  - buf.build/taygo/api
+  - buf.build/taygo/db
+  - buf.build/envoyproxy/protoc-gen-validate
+  - buf.build/googleapis/googleapis
+lint:
+  use:
+    - DEFAULT
+    - UNARY_RPC
+breaking:
+  ignore_unstable_packages: true
+  use:
+    - FILE

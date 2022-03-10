@@ -1,5 +1,5 @@
 version: v1
 directories:
-  - .proto/account
+  - .proto/contact
   - .proto/api
   - .proto/db

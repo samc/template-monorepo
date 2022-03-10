@@ -7,7 +7,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "incremental": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "noEmit": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,

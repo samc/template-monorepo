@@ -4,7 +4,7 @@
 #    https://docs.trunk.io/check/config
 #  ⌞                                   ⌟
 
-version: "0.1"
+version: 0.1
 cli:
   version: 0.7.0-beta
 lint:

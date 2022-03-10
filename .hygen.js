@@ -6,7 +6,6 @@ module.exports = {
 	helpers: {
 		render: (path, data) => {
 			let template;
-			s;
 			template = fs.readFileSync(path, "utf8");
 			template = template.replace(/^---\n(.*)\n---/g, "\n");
 

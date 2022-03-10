@@ -8,6 +8,7 @@ module.exports = {
 	rules: {
 		"@next/next/no-document-import-in-page": "off",
 		"@next/next/no-html-link-for-pages": "off",
+    "react-hooks/exhaustive-deps": "off",
 		"react-hooks/rules-of-hooks": "off",
 	},
 };

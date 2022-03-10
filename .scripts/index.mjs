@@ -21,6 +21,14 @@ config.set(
 const program = new Commander.Command();
 program.name("invoke").description("Eden CLI").version(Constants.VERSION);
 
+// ⌜                    ⌝
+//   [[invoke.app]]
+//
+//   Available commands:
+//   - run
+// ⌞                    ⌟
+program.addCommand(Commands.app(config));
+
 // ⌜                   ⌝
 //   [[invoke.clean]]
 //
@@ -72,15 +80,14 @@ program.addCommand(Commands.lint(config));
 // ⌞                   ⌟
 program.addCommand(Commands.refresh(config));
 
-// ⌜                        ⌝
-//   [[invoke.service]]
-//
-//   Available options:
-//   - --all
-//
-//   Available commands:
-//   - run
-// ⌞                        ⌟
-program.addCommand(Commands.service(config));
+// ⌜                 ⌝
+//   [[invoke.tools]]
+// ⌞                 ⌟
+program.addCommand(Commands.tools(config));
+
+// ⌜                 ⌝
+//   [[invoke.update]]
+// ⌞                 ⌟
+program.addCommand(Commands.update(config));
 
 program.parse(process.argv.slice(1));

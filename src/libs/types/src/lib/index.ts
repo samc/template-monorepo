@@ -15,4 +15,3 @@ export * from "./_rc";
 export * from "./_rgb";
 export * from "./_shared";
 export * from "./_styled-component";
-export * from "./styled/index";

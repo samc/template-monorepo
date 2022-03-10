@@ -13,18 +13,25 @@
       "path": "../.vscode"
     },
     {
+      "name": "⚙️ config :: trunk",
+      "path": "../.trunk"
+    },
+    {
       "name": "⚙️ config :: skaffold",
       "path": "../.skaffold"
     },
     {
-      "name": "🌐 @taygo/service.account",
-      "path": "../src/services/account"
+      "name": "🌐 @taygo/gateway.graphql",
+      "path": "../src/gateways/graphql"
     },
     {
-      "name": "📟 @taygo/client.main",
-      "path": "../src/clients/main"
+      "name": "📟 @taygo/client.contact",
+      "path": "../src/clients/contact"
     },
-
+    {
+      "name": "⚡ @taygo/function.contact",
+      "path": "../src/functions/contact"
+    },
     {
       "name": "📦 @taygo/abstract",
       "path": "../src/libs/abstract"
@@ -62,8 +69,8 @@
       "path": "../src/libs/utils"
     },
     {
-      "name": "💠 @taygo/proto.account",
-      "path": "../.proto/account"
+      "name": "💠 @taygo/proto.contact",
+      "path": "../.proto/contact"
     },
     {
       "name": "💠 @taygo/proto.api",
@@ -344,6 +351,13 @@
     ],
     "vsicons.associations.folders": [
       {
+        "icon": "autohotkey",
+        "format": "svg",
+        "extensions": [
+          ".ahk"
+        ]
+      },
+      {
         "icon": "bloc",
         "format": "svg",
         "extensions": [
@@ -414,10 +428,20 @@
         ]
       },
       {
+        "icon": "middleware",
+        "format": "svg",
+        "extensions": [
+          "function",
+          "functions"
+        ]
+      },
+      {
         "icon": "model",
         "format": "svg",
         "extensions": [
-          ".entity", "blocks", "entity"
+          ".entity",
+          "blocks",
+          "entity"
         ]
       },
       {
@@ -440,6 +464,13 @@
         "extensions": [
           ".nix",
           "nix"
+        ]
+      },
+      {
+        "icon": "route",
+        "format": "svg",
+        "extensions": [
+          "gateways"
         ]
       },
       {

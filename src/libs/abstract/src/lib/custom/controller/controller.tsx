@@ -75,8 +75,8 @@ export abstract class Controller<
 	public static useContext = Controller.createContextHook(Controller.Context);
 
 	protected get ctx(): TContext {
-		const { data, dispatch } = this;
-		return { data, dispatch } as TContext;
+		const { data, dispatch, service } = this;
+		return { data, dispatch, service } as TContext;
 	}
 
 	// ===[Collections]===
@@ -153,6 +153,7 @@ export namespace Controller {
 	> {
 		data: Controller.Machine.Data<TMachines>;
 		dispatch: Controller.Machine.Dispatchers<TMachines>;
+    service: Controller.Machine.Services<TMachines>;
 	}
 
 	export namespace Machine {
@@ -218,23 +219,3 @@ export namespace Controller {
 		export type Setter<TPayload> = (payload: TPayload) => void;
 	}
 }
-
-abstract class Foo extends Primitives.PureComponent {}
-
-abstract class Bar extends Foo {}
-
-export class FooBar extends React.Component {
-  public readonly id = "id";
-  constructor(props) {
-    super(props)
-  }
-}
-
-export const FooBarFoo = () => {
-  return <FooBar />;
-}
-
-// export class Bar extends Controller<any, any, any> {
-// 	public readonly id = "id";
-// }
-// export namespace Bar {}
