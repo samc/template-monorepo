@@ -1,72 +1,72 @@
 {
-  "direnv": {
-    "log_format": ""
-  },
-  "init": true,
-  "metadata": {
-    "name": "taygo",
-    "nixpkgs_channel": "nixpkgs-unstable",
-    "organization": "samc",
-    "owner": "Sam Craig",
-    "repository": "https://github.com/samc/taygo",
-    "version": "0.0.0"
-  },
-  "tools": {
-    "golang": {
-      "version": "1.17.6"
-    },
-    "nodejs": {
-      "version": "16.4.0"
-    }
-  },
-  "workspace": {
-    "clients": {
-      "contact": "src/clients/contact"
-    },
-    "libraries": {
-      "abstract": "src/libs/abstract",
-      "primitives": "src/libs/primitives",
-      "protocol": "src/libs/protocol",
-      "sensors": "src/libs/sensors",
-      "theme": "src/libs/theme",
-      "types": "src/libs/types",
-      "universal": "src/libs/universal",
-      "utils": "src/libs/utils"
-    },
-    "protos": {
-      "api": ".proto/api",
-      "account": ".proto/account",
-      "db": ".proto/db"
-    },
-    "functions": {
-      "contact": "src/functions/contact"
-    }
-  },
-  "stage": "development",
-  "entity": {
-    "client": {
-      "contact": {
-        "url": "http://localhost:3000",
-        "host": "localhost",
-        "port": 3000
-      }
-    },
-    "function": {
-      "contact": {
-        "url": "http://localhost:5000",
-        "host": "localhost",
-        "port": "5000"
-      }
-    },
-    "gateway": {
-      "graphql": {
-        "url": "http://localhost:4000",
-        "host": "localhost",
-        "port": 4000
-      }
-    }
-  },
-  "serverless": {
-    "access_key": "AKA1LvjCKNwq5GV1B5gCXGXRH1zF3u1ZZBTbqlVEyUjIO"
-  }
+	"direnv": {
+		"log_format": ""
+	},
+	"init": true,
+	"metadata": {
+		"name": "taygo",
+		"nixpkgs_channel": "nixpkgs-unstable",
+		"organization": "samc",
+		"owner": "Sam Craig",
+		"repository": "https://github.com/samc/taygo",
+		"version": "0.0.0"
+	},
+	"tools": {
+		"golang": {
+			"version": "1.17.6"
+		},
+		"nodejs": {
+			"version": "16.4.0"
+		}
+	},
+	"workspace": {
+		"clients": {
+			"contact": "src/clients/contact"
+		},
+		"libraries": {
+			"abstract": "src/libs/abstract",
+			"primitives": "src/libs/primitives",
+			"protocol": "src/libs/protocol",
+			"sensors": "src/libs/sensors",
+			"theme": "src/libs/theme",
+			"types": "src/libs/types",
+			"universal": "src/libs/universal",
+			"utils": "src/libs/utils"
+		},
+		"protos": {
+			"api": ".proto/api",
+			"account": ".proto/account",
+			"db": ".proto/db"
+		},
+		"functions": {
+			"contact": "src/functions/contact"
+		}
+	},
+	"stage": "development",
+	"entity": {
+		"client": {
+			"contact": {
+				"url": "http://localhost:3000",
+				"host": "localhost",
+				"port": 3000
+			}
+		},
+		"function": {
+			"contact": {
+				"url": "http://localhost:5000",
+				"host": "localhost",
+				"port": "5000"
+			}
+		},
+		"gateway": {
+			"graphql": {
+				"url": "http://localhost:4000",
+				"host": "localhost",
+				"port": 4000
+			}
+		}
+	},
+	"serverless": {
+		"access_key": "AKA1LvjCKNwq5GV1B5gCXGXRH1zF3u1ZZBTbqlVEyUjIO"
+	}
 }
