@@ -3,8 +3,6 @@ syntax = "proto3";
 package taygo.contact;
 
 import "taygo/db/opts.proto";
-
-import "google/protobuf/descriptor.proto";
 import "validate/validate.proto";
 
 // --=[Contact]=---------------------------------------------------------------

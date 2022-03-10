@@ -36,7 +36,7 @@ func (app *App) InitConfig(ctx context.Context) (err error) {
   }
 
   // Load config passed via environment variables.
-  src = env.NewSource(env.WithPrefix("FUNCTION_CONTACT"))
+  src = env.NewSource(env.WithPrefix("ENTITY_FUNCTION_CONTACT"))
   if err = app.config.Load(src); err != nil {
     return err
   }

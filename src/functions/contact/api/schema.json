@@ -959,7 +959,11 @@
         "BytesRules": {
           "oneofs": {
             "wellKnown": {
-              "oneof": ["ip", "ipv4", "ipv6"]
+              "oneof": [
+                "ip",
+                "ipv4",
+                "ipv6"
+              ]
             }
           },
           "fields": {
