@@ -2,6 +2,13 @@
 version: v1
 deps:
   - remote: buf.build
+    owner: envoyproxy
+    repository: protoc-gen-validate
+    branch: main
+    commit: dc09a417d27241f7b069feae2cd74a0e
+    digest: b1-Ml8P8Frdpw3OwpExAAPdylRY3Drdoz0lwMe104zLBEk=
+    create_time: 2021-12-17T23:06:23.975454Z
+  - remote: buf.build
     owner: googleapis
     repository: googleapis
     branch: main
@@ -19,9 +26,9 @@ deps:
     owner: taygo
     repository: contact
     branch: main
-    commit: 83f080f832564dcb9c6ee8fd298bb6b6
-    digest: b1-M8udNifIZKj3FPoJeDtw40_5qHsbjOLQtcHB9CkyNN8=
-    create_time: 2022-03-07T09:43:38.909723Z
+    commit: 44315da4d9a54527a0cecb24a9e31a9a
+    digest: b1-T1zROUIwDaeUk_easzYSDxxU0RaVJyT0Sf1Va75XBP8=
+    create_time: 2022-03-07T14:10:56.93119Z
   - remote: buf.build
     owner: taygo
     repository: db

@@ -18,17 +18,23 @@ import "zx/globals";
  * @returns {Commander.Command}
  */
 export function init(config) {
+  const commands = ["git"];
+
 	const init = new Commander.Command("init").description(
 		"Bootstrap the project environment",
-	);
+	).action(async () => {
+    for (const command of commands) {
+      await $`invoke init ${command}`;
+    }
+  });
 
 	// [[invoke.init.git]]
 	init
 		.command("git")
 		.description("Initialize all `git` scope modifications")
-		.action(() => {
-			$`git flow init`;
-			$`git config gitflow.path.hooks .husky`;
+		.action(async () => {
+			await $`git flow init`;
+			await $`git config gitflow.path.hooks .husky`;
 		});
 
 	init.hook("postAction", () => {

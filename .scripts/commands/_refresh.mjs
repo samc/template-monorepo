@@ -21,7 +21,7 @@ export function refresh(config) {
 		"Refresh the local development environment",
 	);
 
-	refresh.action((options) => {
+	refresh.action(() => {
 		if (Utils.fingerprint("package.json")) $`invoke update project --node`;
 		if (Utils.fingerprint("tools.go")) $`invoke update project --go`;
 		if (Utils.fingerprint(".config")) $`invoke generate config`;

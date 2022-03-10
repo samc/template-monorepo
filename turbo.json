@@ -27,6 +27,7 @@
       "outputs": []
     },
     "update": {
+      "dependsOn": ["^update"],
       "outputs": ["buf.lock", "go.*", "package.json", "schema.prisma"]
     }
   }

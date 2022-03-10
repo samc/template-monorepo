@@ -1,6 +1,4 @@
-﻿Persistent()
-
-#Include "../../lib/array.ahk"
+﻿#Include "../../lib/array.ahk"
 #Include "../../lib/chrome.ahk"
 #Include "../../lib/delay.ahk"
 #Include "../../lib/hotkeys.ahk"
@@ -21,25 +19,16 @@ SetupTools({
   ],
   Pages: [
     {
-      Name: "Documentation - Scripting",
+      Name: "Documentation",
       Profile: Profiles.Work,
       Position: Positions.Left,
       Groups: [
         {
-          Name: "Nix",
-          Color: Chrome.Page.TabGroupColors.Blue,
-          Urls: [
-            "https://github.com/NixOS/nix",
-            "https://github.com/NixOS/nixpkgs",
-            "https://nixos.org/manual/nix/stable",
-            "https://nixos.org/manual/nixpkgs/stable"
-          ]
-        },
-        {
           Name: "AWS",
           Color: Chrome.Page.TabGroupColors.Yellow,
           Urls: [
-            "https://docs.aws.amazon.com"
+            "https://docs.aws.amazon.com",
+            "https://docs.aws.amazon.com/lambda/latest/dg/API_Reference.html"
           ]
         },
         {
@@ -48,16 +37,27 @@ SetupTools({
           Urls: [
             "https://www.serverless.com/framework/docs",
             "https://www.serverless.com/cloud/docs",
-            "https://github.com/serverless/serverless"
+            "https://github.com/serverless/serverless",
+            "https://github.com/dherault/serverless-offline"
           ]
         },
         {
-          Name: "API Gateway",
-          Color: Chrome.Page.TabGroupColors.Red,
+          Name: "Apollo",
+          Color: Chrome.Page.TabGroupColors.Purple,
           Urls: [
-            "https://www.serverless.com/framework/docs",
-            "https://www.serverless.com/cloud/docs",
-            "https://github.com/serverless/serverless"
+            "https://www.apollographql.com/docs",
+            "https://www.apollographql.com/docs/federation",
+            "https://github.com/apollographql/apollo"
+          ]
+        },
+        {
+          Name: "Prisma",
+          Color: Chrome.Page.TabGroupColors.White,
+          Urls: [
+            "https://www.prisma.io/docs",
+            "https://www.prisma.io/docs/concepts/components/prisma-schema",
+            "https://www.prisma.io/docs/concepts/components/prisma-client",
+            "https://github.com/prisma-korea/graphql-schema-generator"
           ]
         },
         {

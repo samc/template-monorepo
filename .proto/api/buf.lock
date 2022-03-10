@@ -5,13 +5,13 @@ deps:
     owner: googleapis
     repository: googleapis
     branch: main
-    commit: b66d86097dde451b8f9e39add0fa39a4
-    digest: b1-ehnAUToBJhBCYMN5iY0ALF04_NkZBw0n7pXAJ_ykoF4=
-    create_time: 2022-03-05T15:03:39.234468Z
+    commit: 8abb121752d4454db5546c3b4653b450
+    digest: b1-juERcaGEZDjdUIC37Hv14Xqn7-FPFXcXXrXnK6AYhxs=
+    create_time: 2022-03-09T15:09:40.394351Z
   - remote: buf.build
     owner: taygo
     repository: db
     branch: main
-    commit: ce2901186aa24466a28ead56a4276da9
-    digest: b1-uUfxB3gMDG8F1AxTWMdVuA5dIgcafUrWqO8Z0K7YSm4=
-    create_time: 2022-03-07T09:26:56.525583Z
+    commit: fb1ea9834cfa48ffa8d68c06e77f969f
+    digest: b1-0onvPtT-vWesvsyPzj6vSDMa056KSFGKx6RIAvHdXI8=
+    create_time: 2022-03-10T11:31:43.104736Z

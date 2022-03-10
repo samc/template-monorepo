@@ -7,16 +7,12 @@ import Conf from "conf";
 import Enquirer from "enquirer";
 import "zx/globals";
 
-import * as Utils from "../utils/index.mjs";
-
-const COMMANDS = ["project", "applications"];
-
 // ⌜                     ⌝
 //   [[invoke.update]]
 //
 //   Available commands:
 //   - project
-//   - applications
+//   - app
 // ⌞                     ⌟
 
 /**
@@ -33,12 +29,18 @@ export function update(config) {
 				type: "multiselect",
 				name: "commands",
 				message: "What updaters would you like to run?",
-				choices: COMMANDS.map((command) => ({ name: command, value: command })),
+				choices: [
+					{ name: "Project", value: "project" },
+					{ name: "App", value: "app" },
+				],
+        result(names) {
+          return Object.values(this.map(names));
+        },
 				indicator: "⊡",
 			});
 
 			for (const command of commands) {
-				await $`invoke update ${command} --all`;
+				await $`invoke update ${command}`;
 			}
 		});
 
@@ -76,6 +78,42 @@ export function update(config) {
 			await $`go install ${url}@${version}`;
 		}
 	}
+
+	// [[invoke.update.app]]
+	update
+		.command("app")
+		.description("Update application level dependencies")
+		.argument("[domains...]", "Application domains to update")
+		.option("-a, --all", "Update all application domains", false)
+		.action(async (domains, options) => {
+			const { all } = options;
+
+			if (all) {
+				return await $`npm run update`;
+			}
+
+			domains.length ||
+				({ domains } = await Enquirer.prompt({
+					type: "multiselect",
+					name: "domains",
+					message: "What updaters would you like to run?",
+					choices: [
+						{ name: "Clients", value: "clients" },
+						{ name: "Libs", value: "libs" },
+						{ name: "Proto", value: "proto" },
+						{ name: "Functions", value: "functions" },
+						{ name: "Template", value: "template" },
+					],
+					result(names) {
+						return Object.values(this.map(names));
+					},
+					indicator: "⊡",
+				}));
+
+			for (const domain of domains) {
+				await $`npm run update:${domain}`;
+			}
+		});
 
 	return update;
 }
