@@ -20,6 +20,7 @@
     "clean:proto": "npm run clean -- --scope=@taygo/proto.*",
     "clean:functions": "npm run clean -- --scope=@taygo/function.*",
     "clean:template": "npm run clean -- --scope=@taygo/template.*",
+    "deploy": "turbo run deploy",
     "dev": "turbo run dev",
     "generate": "turbo run generate",
     "generate:clients": "npm run generate -- --scope=@taygo/client.*",
@@ -66,6 +67,8 @@
     "npm-check-updates": "^12.5.2",
     "npm-run-all": "^4.1.5",
     "semantic-release": "^19.0.2",
+    "serverless": "^3.7.3",
+    "serverless-offline": "^8.5.0",
     "turbo": "latest"
   },
   "engines": {

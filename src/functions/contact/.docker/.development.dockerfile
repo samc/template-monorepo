@@ -20,7 +20,7 @@ RUN apk --update --no-cache add ca-certificates
 #     - Run Compile Daemon as an entrypoint
 #  ⌞                                                              ⌟
 
-FROM golang:${GOLANG_VERSION}-alpine AS go-builder
+FROM golang:${TOOLS_GOLANG_VERSION}-alpine AS go-builder
 
 WORKDIR /app
 

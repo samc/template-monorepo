@@ -14,6 +14,9 @@
 	"tools": {
 		"golang": {
 			"version": "1.17.6"
+		},
+		"nodejs": {
+			"version": "16.4.0"
 		}
 	},
 	"workspace": {
@@ -32,11 +35,38 @@
 		},
 		"protos": {
 			"api": ".proto/api",
-			"account": ".proto/account"
+			"account": ".proto/account",
+			"db": ".proto/db"
 		},
 		"functions": {
 			"contact": "src/functions/contact"
 		}
 	},
-	"stage": "development"
+	"stage": "development",
+	"entity": {
+		"client": {
+			"contact": {
+				"url": "http://localhost:3000",
+				"host": "localhost",
+				"port": 3000
+			}
+		},
+		"function": {
+			"contact": {
+				"url": "http://localhost:5000",
+				"host": "localhost",
+				"port": 5000
+			}
+		},
+		"gateway": {
+			"graphql": {
+				"url": "http://localhost:4000",
+				"host": "localhost",
+				"port": 4000
+			}
+		}
+	},
+	"serverless": {
+		"access_key": "AKA1LvjCKNwq5GV1B5gCXGXRH1zF3u1ZZBTbqlVEyUjIO"
+	}
 }

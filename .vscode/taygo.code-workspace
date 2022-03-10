@@ -81,8 +81,16 @@
       "path": "../.proto/db"
     },
     {
-      "name": "📋 @taygo/chart.service",
-      "path": "../.k8s/charts/service"
+      "name": "📋 @taygo/chart.client",
+      "path": "../.k8s/charts/client"
+    },
+    {
+      "name": "📋 @taygo/chart.function",
+      "path": "../.k8s/charts/function"
+    },
+    {
+      "name": "📋 @taygo/chart.gateway",
+      "path": "../.k8s/charts/gateway"
     },
     {
       "name": "📚 @taygo/templates.component",

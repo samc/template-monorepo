@@ -28,7 +28,9 @@ SetupTools({
           Color: Chrome.Page.TabGroupColors.Yellow,
           Urls: [
             "https://docs.aws.amazon.com",
-            "https://docs.aws.amazon.com/lambda/latest/dg/API_Reference.html"
+            "https://docs.aws.amazon.com/lambda/latest/dg/API_Reference.html",
+            "https://docs.aws.amazon.com/lambda/latest/dg/golang-handler.html",
+            "https://docs.aws.amazon.com/lambda/latest/dg/go-image.html"
           ]
         },
         {
@@ -38,7 +40,8 @@ SetupTools({
             "https://www.serverless.com/framework/docs",
             "https://www.serverless.com/cloud/docs",
             "https://github.com/serverless/serverless",
-            "https://github.com/dherault/serverless-offline"
+            "https://github.com/dherault/serverless-offline",
+            "https://www.serverless.com/framework/docs/providers/aws/guide/functions"
           ]
         },
         {

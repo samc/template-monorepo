@@ -1,4 +1,4 @@
-ARG GOLANG_VERSION
+ARG TOOLS_GOLANG_VERSION
 
 #  ⌜                                       ⌝
 #     Stage 1:
@@ -17,7 +17,7 @@ RUN apk --update --no-cache add ca-certificates
 #     - Copy root certificate
 #  ⌞                                   ⌟
 
-FROM golang:${GOLANG_VERSION}-alpine AS go-builder
+FROM golang:${TOOLS_GOLANG_VERSION}-alpine AS go-builder
 
 WORKDIR /app
 

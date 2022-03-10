@@ -12,10 +12,14 @@ config.set(
 		`.config/config.${process.env.STAGE ?? "development"}.json`,
 	)),
 );
+for (let [key, value] of Object.entries(process.env)) {
+	key = key.split("_").join(".").toLowerCase();
+	config.set(key, value);
+}
 
 const gateway = new ApolloGateway({
 	supergraphSdl: new IntrospectAndCompose({
-		subgraphs: [{ name: "contact", url: "http://localhost:4000/query" }],
+		subgraphs: [{ name: "contact", url: config.get("entity.gateway.contact.url") }],
 	}),
 });
 

@@ -17,8 +17,8 @@ requires:
     activeProfiles:
       - name: build
         activatedBy: [build]
-  - configs: [services]
-    path: .skaffold/skaffold.services.yaml
+  - configs: [functions]
+    path: .skaffold/skaffold.functions.yaml
     activeProfiles:
       - name: build
         activatedBy: [build]

@@ -10,7 +10,7 @@ pkgs.mkShell rec {
     paths = buildInputs;
   };
   buildInputs = [
-    pkgs.act
+    pkgs.aws
     pkgs.gitflow
     pkgs.go
     pkgs.kubernetes-helm

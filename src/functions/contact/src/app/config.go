@@ -2,12 +2,12 @@ package app
 
 import (
 	"context"
-  "os"
+	"os"
 
-  "go-micro.dev/v4/config"
+	"go-micro.dev/v4/config"
 	"go-micro.dev/v4/config/source"
-  "go-micro.dev/v4/config/source/env"
-  "go-micro.dev/v4/config/source/file"
+	"go-micro.dev/v4/config/source/env"
+	"go-micro.dev/v4/config/source/file"
 )
 
 // Config is a type alias for Micros's `Config`.
@@ -36,7 +36,7 @@ func (app *App) InitConfig(ctx context.Context) (err error) {
   }
 
   // Load config passed via environment variables.
-  src = env.NewSource(env.WithPrefix("FUNCTION_CONTACT"))
+  src = env.NewSource(env.WithPrefix("ENTITY_FUNCTION_CONTACT"))
   if err = app.config.Load(src); err != nil {
     return err
   }

@@ -8,7 +8,8 @@ import "zx/globals";
 //   [[invoke.app]]
 //
 //   Available commands:
-//   - run
+//   - npm
+//   - npx
 // ⌞                     ⌟
 
 /**
@@ -22,14 +23,24 @@ export function app(config) {
 		"Run application level operations",
 	);
 
-	// [[invoke.application.run]]
+	// [[invoke.application.npm]]
 	app
-		.command("run [commands...]")
+		.command("npm [commands...]")
 		.option("-t, --type <type>", "the type of application")
 		.option("-n, --name <name>", "the name of the application")
 		.action((commands, options) => {
 			const { type, name } = options;
 			$`npm --workspace=@taygo/${type}.${name} ${commands}`;
+		});
+
+	// [[invoke.application.npx]]
+	app
+		.command("npx [commands...]")
+		.option("-t, --type <type>", "the type of application")
+		.option("-n, --name <name>", "the name of the application")
+		.action((commands, options) => {
+			const { type, name } = options;
+			$`npx --workspace=@taygo/${type}.${name} ${commands}`;
 		});
 
 	return app;
