@@ -9,7 +9,7 @@ deps:
     digest: b1-FD6diKiyl9D8RnsRgI36jnR9uwB0nHh1ooibcAuDb8s=
     create_time: 2022-03-10T15:08:39.671526Z
   - remote: buf.build
-    owner: taygo
+    owner: mono
     repository: db
     branch: main
     commit: 3c124b7f0b914281a474086e83adb465

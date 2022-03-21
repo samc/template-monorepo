@@ -1,11 +1,11 @@
 {
-  "name": "@taygo/proto.api",
+  "name": "@mono/proto.api",
   "version": "0.0.0",
   "private": true,
   "files": [
     "buf.lock",
     "buf.yaml",
-    "taygo"
+    "mono"
   ],
   "scripts": {
     "update": "run-s \"update:*\"",
@@ -13,7 +13,7 @@
     "update:publish": "buf push"
   },
   "dependencies": {
-    "@taygo/proto.db": "^0.0.0"
+    "@mono/proto.db": "^0.0.0"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.5",

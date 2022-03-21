@@ -11,12 +11,12 @@ import "zx/globals";
 //   [[invoke.update]]
 //
 //   Available commands:
-//   - project
-//   - app
+//   - workspace
+//   - entity
 // ⌞                     ⌟
 
 /**
- * Update project & application level dependencies.
+ * Update workspace & entity level dependencies.
  *
  * @param {Conf} config
  * @returns {Commander.Command}
@@ -30,12 +30,9 @@ export function update(config) {
 				name: "commands",
 				message: "What updaters would you like to run?",
 				choices: [
-					{ name: "Project", value: "project" },
-					{ name: "App", value: "app" },
+					{ name: "workspace", message: "Workspace" },
+					{ name: "entity", message: "Entity" },
 				],
-        result(names) {
-          return Object.values(this.map(names));
-        },
 				indicator: "⊡",
 			});
 
@@ -44,30 +41,24 @@ export function update(config) {
 			}
 		});
 
-	// [[invoke.update.project]]
+	// [[invoke.update.workspace]]
 	update
-		.command("project")
-		.description("Update root level project dependencies")
-		.option("--proto", "Update protobuf references", false)
+		.command("workspace")
+		.description("Update root level workspace dependencies")
 		.option("--go", "Update go dependencies", false)
 		.option("--node", "Update node dependencies", false)
 		.option("-a, --all", "Update all dependencies", false)
 		.action(async (options) => {
-			const { proto, go, node, all } = options;
-			if (all || proto) await updateProjectProto();
-			if (all || node) await updateProjectNode();
-			if (all || go) await updateProjectGo();
+			const { go, node, all } = options;
+			if (all || node) await updateWorkspaceNode();
+			if (all || go) await updateWorkspaceGo();
 		});
 
-	async function updateProjectProto() {
-		return await $`npm run update:proto`;
+	async function updateWorkspaceNode() {
+		return await $`npm run update:workspace:node`;
 	}
 
-	async function updateProjectNode() {
-		return await $`npm run update:project`;
-	}
-
-	async function updateProjectGo() {
+	async function updateWorkspaceGo() {
 		const content = await FS.promises.readFile("tools.go", "utf8");
 		const deps = content.matchAll(
 			/^\s+_\s\"(?<url>.*)\"\s+\/\/(?<version>.*)$/gm,
@@ -79,39 +70,36 @@ export function update(config) {
 		}
 	}
 
-	// [[invoke.update.app]]
+	// [[invoke.update.entity]]
 	update
-		.command("app")
-		.description("Update application level dependencies")
-		.argument("[domains...]", "Application domains to update")
-		.option("-a, --all", "Update all application domains", false)
-		.action(async (domains, options) => {
+		.command("entity")
+		.description("Update entity level dependencies")
+		.argument("[entities...]", "Entities to update")
+		.option("-a, --all", "Update all entities", false)
+		.action(async (entities, options) => {
 			const { all } = options;
 
 			if (all) {
 				return await $`npm run update`;
 			}
 
-			domains.length ||
-				({ domains } = await Enquirer.prompt({
+			entities.length ||
+				({ entities } = await Enquirer.prompt({
 					type: "multiselect",
-					name: "domains",
+					name: "entities",
 					message: "What updaters would you like to run?",
 					choices: [
-						{ name: "Clients", value: "clients" },
-						{ name: "Libs", value: "libs" },
-						{ name: "Proto", value: "proto" },
-						{ name: "Functions", value: "functions" },
-						{ name: "Template", value: "template" },
+						{ name: "clients", message: "Clients" },
+						{ name: "libs", message: "Libs" },
+						{ name: "proto", message: "Proto" },
+						{ name: "functions", message: "Functions" },
+						{ name: "template", message: "Template" },
 					],
-					result(names) {
-						return Object.values(this.map(names));
-					},
 					indicator: "⊡",
 				}));
 
-			for (const domain of domains) {
-				await $`npm run update:${domain}`;
+			for (const entity of entities) {
+				await $`npm run update:${entity}`;
 			}
 		});
 

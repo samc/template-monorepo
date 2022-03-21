@@ -24,27 +24,6 @@ SetupTools({
       Position: Positions.Left,
       Groups: [
         {
-          Name: "AWS",
-          Color: Chrome.Page.TabGroupColors.Yellow,
-          Urls: [
-            "https://docs.aws.amazon.com",
-            "https://docs.aws.amazon.com/lambda/latest/dg/API_Reference.html",
-            "https://docs.aws.amazon.com/lambda/latest/dg/golang-handler.html",
-            "https://docs.aws.amazon.com/lambda/latest/dg/go-image.html"
-          ]
-        },
-        {
-          Name: "Serverless",
-          Color: Chrome.Page.TabGroupColors.Red,
-          Urls: [
-            "https://www.serverless.com/framework/docs",
-            "https://www.serverless.com/cloud/docs",
-            "https://github.com/serverless/serverless",
-            "https://github.com/dherault/serverless-offline",
-            "https://www.serverless.com/framework/docs/providers/aws/guide/functions"
-          ]
-        },
-        {
           Name: "Apollo",
           Color: Chrome.Page.TabGroupColors.Purple,
           Urls: [
@@ -72,13 +51,13 @@ SetupTools({
           ]
         },
         {
-          Name: "Material UI",
-          Color: Chrome.Page.TabGroupColors.Blue,
+          Name: "XState",
+          Color: Chrome.Page.TabGroupColors.White,
           Urls: [
-            "https://mui.com/getting-started/usage",
-            "https://github.com/mui/material-ui"
+            "https://xstate.js.org/docs/about/glossary.html",
+            "https://github.com/statelyai/xstate"
           ]
-        }
+        },
       ]
     },
     {
@@ -87,17 +66,19 @@ SetupTools({
       Position: Positions.Left,
       Groups: [
         {
-          Name: "AWS",
-          Color: Chrome.Page.TabGroupColors.Yellow,
+          Name: "Vercel",
+          Color: Chrome.Page.TabGroupColors.White,
           Urls: [
-            "https://us-east-1.console.aws.amazon.com/console/home"
+            "https://vercel.com/docs",
+            "https://github.com/vercel"
           ]
         },
         {
-          Name: "Serverless",
-          Color: Chrome.Page.TabGroupColors.Red,
+          Name: "GCP",
+          Color: Chrome.Page.TabGroupColors.White,
           Urls: [
-            "https://app.serverless.com/samcraigdev"
+            "https://cloud.google.com/kubernetes-engine/docs",
+            "https://cloud.google.com/bigquery/docs"
           ]
         },
       ]

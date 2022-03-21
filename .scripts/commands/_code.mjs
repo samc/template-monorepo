@@ -20,7 +20,7 @@ export function code(config) {
 	);
 
 	code.action(() => {
-		$`code .vscode/taygo.code-workspace`;
+		$`code .vscode/mono.code-workspace`;
 	});
 
 	return code;

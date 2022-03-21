@@ -12,13 +12,16 @@ import * as Utils from "../utils/index.mjs";
 
 const DEFAULT_LINTER_DIRS = ["./", "./.github/.linters"];
 
-// ⌜                     ⌝
-//   [[invoke.generate]]
-//
-//   Available commands:
-//   - env
-//   - linters
-// ⌞                     ⌟
+/*
+ *   ⌜                     ⌝
+ *     [[invoke.generate]]
+ *
+ *     Available commands:
+ *      - config
+ *      - linters
+ *      - template
+ *   ⌞                     ⌟
+ */
 
 /**
  * Run code generators.
@@ -31,8 +34,11 @@ export function generate(config) {
 		"Run code generators",
 	);
 
-	// [[invoke.generate.config]]
-	generate
+	/*
+	 *   ⌜                            ⌝
+	 *     [[invoke.generate.config]]
+	 *   ⌞                            ⌟
+	 */ generate
 		.command("config")
 		.description("Generate root level configuration files")
 		.action(async () => {
@@ -40,7 +46,14 @@ export function generate(config) {
 			await Utils.json2env(config.store, ".env");
 		});
 
-	// [[invoke.generate.linters]]
+	/*
+	 *   ⌜                             ⌝
+	 *     [[invoke.generate.linters]]
+	 *
+	 *     Available options:
+	 *      --dir
+	 *   ⌞                             ⌟
+	 */
 	generate
 		.command("linters")
 		.description(
@@ -66,43 +79,58 @@ export function generate(config) {
 			}
 		});
 
-	// [[invoke.generate.template]]
+	/*
+	 *   ⌜                              ⌝
+	 *     [[invoke.generate.template]]
+	 *   ⌞                              ⌟
+	 */
 	generate
 		.command("template")
 		.description("Generate a new application or component")
-		.action(async () => {
-			const templates = await FS.promises.readdir(
+		.allowUnknownOption(true)
+		.option("-g, --generator [generator]", "Name of the  generator")
+		.option("-a, --action [action]", "Action to perform for the generator")
+		.option("-f, --force", "Force the generator to overwrite all files", false)
+		.action(async (options, command) => {
+			let { generator, action, force } = options;
+			const { args } = command;
+
+			const generators = await FS.promises.readdir(
 				Path.resolve(".templates/lib"),
 			);
 
-			const { template } = await Enquirer.prompt({
-				type: "autocomplete",
-				name: "template",
-				message: "What generator do you want to use?",
-				choices: templates.map((template) => ({
-					name: Inflection.humanize(template),
-					value: template,
-				})),
-			});
+			generator ||
+				({ generator } = await Enquirer.prompt({
+					type: "autocomplete",
+					name: "generator",
+					message: "What generator do you want to use?",
+					choices: generators.map((generator) => ({
+						name: Inflection.humanize(generator),
+						value: generator,
+					})),
+				}));
 
 			const actions = (
-				await FS.promises.readdir(Path.resolve(".templates/lib", template))
+				await FS.promises.readdir(Path.resolve(".templates/lib", generator))
 			).filter((entity) =>
 				FS.lstatSync(
-					Path.resolve(".templates/lib", template, entity),
+					Path.resolve(".templates/lib", generator, entity),
 				).isDirectory(),
 			);
-			const { action } = await Enquirer.prompt({
-				type: "autocomplete",
-				name: "action",
-				message: "What do action do you want to perform?",
-				choices: actions.map((action) => ({
-					name: Inflection.humanize(action),
-					value: action,
-				})),
-			});
 
-			await $`hygen ${template} ${action} --force`;
+			(action && actions.includes(action)) ||
+				({ action } = await Enquirer.prompt({
+					type: "autocomplete",
+					name: "action",
+					message: "What do action do you want to perform?",
+					choices: actions.map((action) => ({
+						name: Inflection.humanize(action),
+						value: action,
+					})),
+				}));
+			await nothrow($`HYGEN_OVERWRITE=${
+				force ? 1 : 0
+			} hygen ${generator} ${action} ${args}`);
 		});
 
 	return generate;

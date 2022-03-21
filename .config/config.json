@@ -4,11 +4,11 @@
 	},
 	"init": true,
 	"metadata": {
-		"name": "taygo",
+		"name": "mono",
 		"nixpkgs_channel": "nixpkgs-unstable",
 		"organization": "samc",
 		"owner": "Sam Craig",
-		"repository": "https://github.com/samc/taygo",
+		"repository": "https://github.com/samc/mono",
 		"version": "0.0.0"
 	},
 	"tools": {
@@ -21,7 +21,7 @@
 	},
 	"workspace": {
 		"clients": {
-			"contact": "src/clients/contact"
+			"contact": "src/clients/example"
 		},
 		"libraries": {
 			"abstract": "src/libs/abstract",
@@ -39,7 +39,7 @@
 			"db": ".proto/db"
 		},
 		"functions": {
-			"contact": "src/functions/contact"
+			"contact": "src/services/example"
 		}
 	},
 	"stage": "development",

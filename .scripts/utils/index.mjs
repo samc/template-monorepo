@@ -1,2 +1,2 @@
-export { fingerprint } from "./_fingerprint.mjs";
-export { json2env } from "./_json-2-env.mjs";
+export * from "./_fingerprint.mjs";
+export * from "./_json-2-env.mjs";

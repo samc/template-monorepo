@@ -1,11 +1,11 @@
 {
-  "name": "@taygo/proto.db",
+  "name": "@mono/proto.db",
   "version": "0.0.0",
   "private": true,
   "files": [
     "buf.lock",
     "buf.yaml",
-    "taygo"
+    "mono"
   ],
   "scripts": {
     "update": "run-s \"update:*\"",

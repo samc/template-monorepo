@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-package taygo.db;
-
-message Model {
-  bool gen = 1;
-  string name = 2;
-}
-

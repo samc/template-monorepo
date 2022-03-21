@@ -2,17 +2,17 @@
 	"Import the spoonful protocol library": {
 		"scope": "typescript,typescriptreact",
 		"prefix": ["import protocol", "ip"],
-		"body": ["import * as Utils from \"@taygo/protocol\";"]
+		"body": ["import * as Utils from \"@mono/protocol\";"]
 	},
 	"Import the spoonful sensors library": {
 		"scope": "typescript,typescriptreact",
 		"prefix": ["import sensors", "is"],
-		"body": ["import * as Utils from \"@taygo/sensors\";"]
+		"body": ["import * as Utils from \"@mono/sensors\";"]
 	},
 	"Import the spoonful utility library": {
 		"scope": "typescript,typescriptreact",
 		"prefix": ["import utils", "iu"],
-		"body": ["import * as Utils from \"@taygo/utils\";"]
+		"body": ["import * as Utils from \"@mono/utils\";"]
 	},
 	"Import a local module": {
 		"scope": "typescript,typescriptreact",

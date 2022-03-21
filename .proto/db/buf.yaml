@@ -1,5 +1,5 @@
 version: v1
-name: buf.build/taygo/db
+name: buf.build/mono/db
 deps:
   - buf.build/googleapis/googleapis
 lint:

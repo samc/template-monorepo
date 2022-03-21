@@ -21,73 +21,101 @@ config.set(
 const program = new Commander.Command();
 program.name("invoke").description("Eden CLI").version(Constants.VERSION);
 
-// ⌜                    ⌝
-//   [[invoke.app]]
-//
-//   Available commands:
-//   - run
-// ⌞                    ⌟
-program.addCommand(Commands.app(config));
-
-// ⌜                   ⌝
-//   [[invoke.clean]]
-//
-//   Available options:
-//   - --all
-// ⌞                   ⌟
+/*
+ *   ⌜                    ⌝
+ *     [[invoke.clean]]
+ *
+ *     Available options:
+ *      --all
+ *   ⌞                    ⌟
+ */
 program.addCommand(Commands.clean(config));
 
-// ⌜              ⌝
-//   [[invoke.code]]
-// ⌞              ⌟
+/*
+ *   ⌜                  ⌝
+ *     [[invoke.code]]
+ *   ⌞                  ⌟
+ */
 program.addCommand(Commands.code(config));
 
-// ⌜             ⌝
-//   [[invoke.dev]]
-// ⌞             ⌟
+/*
+ *   ⌜                  ⌝
+ *     [[invoke.dev]]
+ *   ⌞                  ⌟
+ */
 program.addCommand(Commands.dev(config));
 
-// ⌜                     ⌝
-//   [[invoke.generate]]
-//
-//   Available commands:
-//   - config
-//   - linters
-// ⌞                     ⌟
+/*
+ *   ⌜                     ⌝
+ *     [[invoke.ent]]
+ *
+ *     Available commands:
+ *      - npm
+ *      - npx
+ *   ⌞                     ⌟
+ */
+program.addCommand(Commands.ent(config));
+
+/*
+ *   ⌜                     ⌝
+ *     [[invoke.generate]]
+ *
+ *     Available commands:
+ *      - config
+ *      - linters
+ *   ⌞                     ⌟
+ */
 program.addCommand(Commands.generate(config));
 
-// ⌜                     ⌝
-//   [[invoke.init]]
-//
-//   Available commands:
-//   - git
-//   - tree
-// ⌞                     ⌟
+/*
+ *   ⌜                    ⌝
+ *     [[invoke.init]]
+ *
+ *     Available commands:
+ *      - git
+ *      - tree
+ *   ⌞                    ⌟
+ */
 program.addCommand(Commands.init(config));
 
-// ⌜                        ⌝
-//   [[invoke.lint]]
-//
-//   Available options:
-//   - --all
-//   - --fix
-//   - --filter [linters...]
-// ⌞                        ⌟
+/*
+ *   ⌜                       ⌝
+ *     [[invoke.lint]]
+ *
+ *     Available options:
+ *      --all
+ *      --fix
+ *      --filter [linters...]
+ *   ⌞                       ⌟
+ */
 program.addCommand(Commands.lint(config));
 
-// ⌜                   ⌝
-//   [[invoke.refresh]]
-// ⌞                   ⌟
-program.addCommand(Commands.refresh(config));
+/*
+ *   ⌜                  ⌝
+ *     [[invoke.reload]]
+ *
+ *     Available options:
+ *      --force
+ *   ⌞                  ⌟
+ */
+program.addCommand(Commands.reload(config));
 
-// ⌜                 ⌝
-//   [[invoke.tools]]
-// ⌞                 ⌟
+/*
+ *   ⌜                  ⌝
+ *     [[invoke.tools]]
+ *   ⌞                  ⌟
+ */
 program.addCommand(Commands.tools(config));
 
-// ⌜                 ⌝
-//   [[invoke.update]]
-// ⌞                 ⌟
+/*
+ *   ⌜                    ⌝
+ *     [[invoke.update]]
+ *
+ *     Available commands:
+ *      - workspace
+ *      - entity
+ *   ⌞                    ⌟
+ */
 program.addCommand(Commands.update(config));
 
 program.parse(process.argv.slice(1));
